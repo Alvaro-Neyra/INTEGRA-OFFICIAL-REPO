@@ -1,0 +1,126 @@
+header {
+    padding-top: 1rem;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    font-size: 1.2rem;
+    position: fixed;
+    z-index: 1;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img {
+    display: none;
+}
+
+header nav ul div {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+header nav ul li a:hover{
+    color: var(--mainColorLight);
+    transition: 0.5s ease-in-out;
+}
+
+header nav ul button {
+    background-color: var(--textColor);
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+header nav ul button:hover {
+    background-color: var(--mainColorLight);
+    transition: 0.5s ease-in-out;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    header {
+        display: flex;
+        gap: 1.5rem;
+        padding: 5rem 2rem;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        gap: 1.5rem;
+        transition: 1s;
+        background-color: var(--mainColor);
+    }
+    header nav img {
+        display: block;
+        width: 250px;
+    }
+    header nav div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav div ul div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+}
