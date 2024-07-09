@@ -1,0 +1,20 @@
+.projects-container {
+    padding: 7rem 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.projects {
+    display: flex;
+    gap: 1.5rem;
+}
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}

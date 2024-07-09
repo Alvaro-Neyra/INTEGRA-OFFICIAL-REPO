@@ -1,8 +1,12 @@
 import { useRef } from 'react';
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import "../styles/NavBar.css"
 
 function NavBar() {
+
+    const [navBar, setNavBar] = useState(false);
+
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -11,9 +15,18 @@ function NavBar() {
         );
     };
 
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNavBar(true);
+        } else {
+            setNavBar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
 
     return (
-        <header>
+        <header className={navBar ? "navbar active" : "navbar"}>
             <a href="./#">
                 <img src="https://faro51.com/wp-content/uploads/2018/07/logo-faro51-web.png" alt="integra-logo" />
             </a>

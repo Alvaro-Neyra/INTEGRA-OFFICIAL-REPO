@@ -7,6 +7,16 @@
     font-family: "Titillium Web", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+*::selection {
+  background-color: var(--mainColorLight);
+  color: white;
+}
+
+
 #root {
   margin: 0;
   padding: 0;
