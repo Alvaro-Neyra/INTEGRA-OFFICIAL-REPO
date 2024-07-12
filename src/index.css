@@ -7,24 +7,53 @@
     font-family: "Titillium Web", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 *::selection {
   background-color: var(--mainColorLight);
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 #root {
   margin: 0;
   padding: 0;
+  min-width: 100vw;
 }
 
 :root{
     --mainColor: #45495a;
     --mainColorLight: #5767aa;
-    --secondaryColor: #db2b39;
+    --mainColorLightHover: #6f7fc7;
     --textColor: #eee;
+    --darkSeaColor: #012E40;
+    --seaColor: #024959;
+    --lightSeaColor: #026773;
+    --skyLightColor: #3CA6A6;
+    --sandColor: #F2E3D5;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--mainColorLight);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColorLightHover);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mainColor);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

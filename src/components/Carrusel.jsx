@@ -21,10 +21,8 @@ function Carrusel ({ images }){
         setCurrent(current === 0 ? images.length - 1 : current - 1);
     };
 
-    console.log(current);
-
     return (
-        <div className="carousel" 
+        <section className="carousel" 
             onMouseEnter={() => {
                 setAutoPlay(false);
                 clearTimeout(timeOut);
@@ -38,32 +36,32 @@ function Carrusel ({ images }){
                         index === current ? "carousel_card carousel_card-active" : "carousel_card"
                     }>
                         <img className="card-image" src={image.img} alt={image.title} />
-                        <div className="card_overlay">
+                        <article className="card_overlay">
                             <h2 className="card-title">{image.title}</h2>
                             <p className="card-text">{image.text}</p>
-                        </div>
-                        <div className="button-lists">
+                        </article>
+                        <section className="button-lists">
                             <button>Ver Proyecto</button>
                             <button>Contáctenos</button>
-                        </div>
+                        </section>
                     </div>
                 })}
-                <div className="carousel_arrow_left" onClick={slideLeft}>&lsaquo;</div>
-                <div className="carousel_arrow_right" onClick={slideRight}>&rsaquo;</div>
+                <i className="carousel_arrow_left" onClick={slideLeft}><span className="fa-solid fa-angle-left "></span></i>
+                <i className="carousel_arrow_right" onClick={slideRight}><span className="fa-solid fa-angle-right"></span></i>
                 <div className="carousel_pagination">
                     {images.map((_, index)=>{
                         return (
-                        <div key={index} className={
+                        <span key={index} className={
                             index === current ? "pagination_dot pagination_dot-active" : "pagination_dot"
                         }
                         onClick={() => setCurrent(index)}
-                        ></div>
+                        ></span>
                     );
                     })}
                     
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

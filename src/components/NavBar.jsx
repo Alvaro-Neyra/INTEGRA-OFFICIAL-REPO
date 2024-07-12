@@ -38,19 +38,19 @@ function NavBar() {
                     <ul>
                         <div>
                             <li>
-                                <a href="./#">Home</a>
+                                <a onClick={showNavbar} href="./#">Home</a>
                             </li>
                             <li>
-                                <a href="./#">Nosotros</a>
+                                <a onClick={showNavbar} href="./#">Nosotros</a>
                             </li>
                             <li>
-                                <a href="./#">Servicios</a>
+                                <a onClick={showNavbar} href="./#">Servicios</a>
                             </li>
                             <li>
-                                <a href="./#">Portfolio</a>
+                                <a onClick={showNavbar} href="./#">Portfolio</a>
                             </li>
                             <li>
-                                <a href="./#">Contacto</a>
+                                <a onClick={showNavbar} href="./#">Contacto</a>
                             </li>
                         </div>
                         <button>Contáctenos</button>

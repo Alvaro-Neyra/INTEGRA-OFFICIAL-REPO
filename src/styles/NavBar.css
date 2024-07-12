@@ -7,7 +7,7 @@ header {
     background-color: transparent;
     font-size: 1.2rem;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 
 header img {
@@ -36,7 +36,7 @@ header nav ul div {
 header nav ul li a{
     text-decoration: none;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 400ms ease-in;
 }
 
 header nav ul li a:hover{
@@ -44,7 +44,7 @@ header nav ul li a:hover{
 }
 
 header nav ul li {
-    transition: 0.5s ease-in-out;
+    transition: 400ms ease-in;
 }
 
 header nav ul li:hover {
@@ -57,7 +57,7 @@ header nav ul button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 400ms ease-in;
     font-size: 1.3rem;
 }
 
@@ -85,7 +85,7 @@ header.active .nav-btn {
 }
 
 .navbar {
-    transition: 1s ease-in-out;
+    transition: 400ms ease-in;
 }
 
 header.active {
@@ -93,7 +93,7 @@ header.active {
 }
 
 header.active nav ul li a {
-    transition: 1s ease-in-out;
+    transition: 400ms ease-in;
     color: var(--mainColor);
 }
 
@@ -104,7 +104,7 @@ header.active nav ul li a:hover {
 header.active nav ul button {
     color: var(--textColor);
     background-color: var(--mainColorLight);
-    transition: 1s ease-in-out;
+    transition: 400ms ease-in;
 }
 
 header.active nav ul button:hover {

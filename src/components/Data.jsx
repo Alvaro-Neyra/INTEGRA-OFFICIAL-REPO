@@ -1,29 +1,28 @@
+import { FaArrowRight } from "react-icons/fa";
 import "../styles/Data.css";
 
 function Data({ services }) {
     return (
-        <div className="services-section">
-            <h1 className="services-title">Nuestros servicios</h1>
+        <section className="services-section">
+            <h2 className="services-title">Nuestros servicios</h2>
             <div className="services-container">
                 {services.map((service, index) => {
                     return (
-                    <div className="service-container" key={index} style={{ backgroundImage: `url(${service.image})`}}>
+                    <article className="service-container" key={index} style={{ backgroundImage: `url(${service.image})`}}>
                         <i className={service.icon}></i>
-                        <h2 className="service-title">{service.nombre}</h2>
+                        <h3 className="service-title">{service.nombre}</h3>
                         <p className="service-description">{service.descripcion}</p>
                         <button className="service-mas-informacion">
-                            <span>
-                                &rsaquo; 
-                            </span>
+                                <FaArrowRight />
                             <span>
                                 Más información
                             </span>
                         </button>
-                    </div>
+                    </article>
                     )
                 })}
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -1,24 +1,56 @@
-import "../styles/Projects.css";
+import 'swiper/swiper-bundle.css'
+import projects from "../assets/Projects"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from "swiper/modules";
+import "../styles/Projects.css"
 
-function Projects( { projects } ) {
-    console.log(projects);
+function CardSlider() {
     return (
-        <div className="projects-container">
-            <h1>PROYECTOS REALIZADOS</h1>
-            <p>Conoce nuestra experiencia</p>
-            <div className="projects">
+        <section className="container">
+            <div className="card__content">
+            <Swiper
+                className="card_container"
+                modules={[Navigation, Pagination]}
+                spaceBetween={32}
+                loop={true}
+                grabCursor={true}
+                pagination={{clickable: true, dynamicBullets: true }}
+                navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                breakpoints={{
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    968: {
+                        slidesPerView: 3,
+                    }
+                }
+                }   
+            >
                 {projects.map((project, index) => {
-                    return(
-                        <div key={index} className="project-container">
-                            <img clasName="project-img" src={project.img} alt={project.name} />
-                            <span className="project-name">{project.name}</span>
-                        </div>
-                    )
+                    return (
+                        <SwiperSlide className="card__article" key={project.id}>
+
+                                <div className="card__image">
+                                    <img src={project.img} alt={project.name} className="card__img" />
+                                    <div className="card__shadow"></div>
+                                </div>
+                                <div className="card__data">
+                                    <h3 className="card__name">{project.name}</h3>
+                                    <p className="card__description">
+                                        {project.description}
+                                    </p>
+                                    <a href="./#" className="card__button">View More</a>
+                                </div>
+                        </SwiperSlide>
+                    );
                 })}
+                </Swiper>
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
+                <div className="swiper-pagination"></div>
             </div>
-            <button className="projects-btn">CONOCE NUESTROS PROYECTOS &rsaquo;</button>
-        </div>
+        </section>
     );
 }
 
-export default Projects;
+export default CardSlider;
