@@ -1,3 +1,13 @@
+.projects-section {
+    padding-block: 3rem;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--mainColor);
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -7,14 +17,13 @@
 }
 
 .card_container {
-    padding-block: 5rem;
+    padding-block: 3rem;
 }
 
 .card__content {
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    padding-block: 2rem;
 }
 
 .card__article {

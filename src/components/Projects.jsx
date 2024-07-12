@@ -6,49 +6,52 @@ import "../styles/Projects.css"
 
 function CardSlider() {
     return (
-        <section className="container">
-            <div className="card__content">
-            <Swiper
-                className="card_container"
-                modules={[Navigation, Pagination]}
-                spaceBetween={32}
-                loop={true}
-                grabCursor={true}
-                pagination={{clickable: true, dynamicBullets: true }}
-                navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
-                breakpoints={{
-                    600: {
-                        slidesPerView: 2,
-                    },
-                    968: {
-                        slidesPerView: 3,
-                    }
-                }
-                }   
-            >
-                {projects.map((project, index) => {
-                    return (
-                        <SwiperSlide className="card__article" key={project.id}>
+        <section className="projects-section">
+            <h2>Proyectos</h2>
+            <section className="container">
+                <div className="card__content">
+                    <Swiper
+                        className="card_container"
+                        modules={[Navigation, Pagination]}
+                        spaceBetween={32}
+                        loop={true}
+                        grabCursor={true}
+                        pagination={{ clickable: true, dynamicBullets: true }}
+                        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                        breakpoints={{
+                            600: {
+                                slidesPerView: 2,
+                            },
+                            968: {
+                                slidesPerView: 3,
+                            }
+                        }
+                        }
+                    >
+                        {projects.map((project, index) => {
+                            return (
+                                <SwiperSlide className="card__article" key={project.id}>
 
-                                <div className="card__image">
-                                    <img src={project.img} alt={project.name} className="card__img" />
-                                    <div className="card__shadow"></div>
-                                </div>
-                                <div className="card__data">
-                                    <h3 className="card__name">{project.name}</h3>
-                                    <p className="card__description">
-                                        {project.description}
-                                    </p>
-                                    <a href="./#" className="card__button">View More</a>
-                                </div>
-                        </SwiperSlide>
-                    );
-                })}
-                </Swiper>
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
-                <div className="swiper-pagination"></div>
-            </div>
+                                    <div className="card__image">
+                                        <img src={project.img} alt={project.name} className="card__img" />
+                                        <div className="card__shadow"></div>
+                                    </div>
+                                    <div className="card__data">
+                                        <h3 className="card__name">{project.name}</h3>
+                                        <p className="card__description">
+                                            {project.description}
+                                        </p>
+                                        <a href="./#" className="card__button">View More</a>
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
+                    <div className="swiper-pagination"></div>
+                </div>
+            </section>
         </section>
     );
 }
