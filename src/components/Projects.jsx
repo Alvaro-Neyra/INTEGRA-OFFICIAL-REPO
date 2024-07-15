@@ -7,7 +7,7 @@ import "../styles/Projects.css"
 function CardSlider() {
     return (
         <section className="projects-section">
-            <h2>Proyectos</h2>
+            <h2 className='heading-2'>Proyectos</h2>
             <section className="container">
                 <div className="card__content">
                     <Swiper
