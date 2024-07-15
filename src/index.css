@@ -32,6 +32,8 @@ body {
     --lightSeaColor: #026773;
     --skyLightColor: #3CA6A6;
     --sandColor: #F2E3D5;
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0,0%, 100%);
 }
 
 ::-webkit-scrollbar {

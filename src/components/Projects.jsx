@@ -30,18 +30,11 @@ function CardSlider() {
                     >
                         {projects.map((project, index) => {
                             return (
-                                <SwiperSlide className="card__article" key={project.id}>
-
-                                    <div className="card__image">
-                                        <img src={project.img} alt={project.name} className="card__img" />
-                                        <div className="card__shadow"></div>
-                                    </div>
-                                    <div className="card__data">
-                                        <h3 className="card__name">{project.name}</h3>
-                                        <p className="card__description">
-                                            {project.description}
-                                        </p>
-                                        <a href="./#" className="card__button">View More</a>
+                                <SwiperSlide className="card" key={project.id} style={{backgroundImage: `url(${project.img})`}}>
+                                    <div className="card-content">
+                                        <h3 className="card__title">{project.name}</h3>
+                                        <p className="card__body">{project.description}</p>
+                                        <a href="./#" className="button">View More</a>
                                     </div>
                                 </SwiperSlide>
                             );

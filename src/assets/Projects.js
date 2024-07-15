@@ -3,7 +3,7 @@ const projectsData = [
         "id": 1,
         "name": "Institucionales",
         "img": "https://faro51.com/wp-content/uploads/2020/04/img-princ-institucionales.jpg",
-        "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines de lucro."
+        "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines .."
     },
     {
         "id": 2,
@@ -39,7 +39,7 @@ const projectsData = [
         "id": 7,
         "name": "Hoteles",
         "img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/ba/16/1b33c7005472b1e0627db778b11d5b3129ac6c69b04246d014cae782eabc.jpeg",
-        "description": "Proyectos para la industria hotelera, desde pequeños hoteles boutique hasta grandes complejos turísticos."
+        "description": "Proyectos para la industria hotelera, desde pequeños hoteles boutique hasta grandes complejos..."
     },
     {
         "id": 8,
@@ -56,9 +56,9 @@ const projectsData = [
     {
         "id": 10,
         "name": "Parques y Recreación",
-        "img": "https://peru21.pe/resizer/Q18MBYvuRXs7LDitvFpaVojFZHU=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CLMVKZTFRJACXHRB2PYHJES5AI.jpg",
+        "img": "https://guiasurco.com/wp-content/uploads/parque-amistad-surco.jpg.webp",
         "description": "Proyectos para el desarrollo de parques y espacios recreativos."
     }
-]
+];
 
 export default projectsData;
