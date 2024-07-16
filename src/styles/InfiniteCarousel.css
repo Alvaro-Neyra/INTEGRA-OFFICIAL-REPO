@@ -9,7 +9,7 @@
 .logos:after {
     position: absolute;
     top: 0;
-    width: 100px;
+    width: 120px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -25,13 +25,15 @@
     background: linear-gradient(to left, rgb(255, 255, 255, 0), white);
 }
 
-.logos:hover .logos-slide{
-    animation-play-state: paused;
+@media (hover) {
+    .logos:hover .logos-slide{
+        animation-play-state: paused;
+    }
 }
 
 .logos-slide {
     display: inline-block;
-    animation: 20s slide infinite linear;
+    animation: 35s slide infinite linear;
 }
 
 .logos-slide img {
@@ -55,14 +57,4 @@
         display: inline-block;
         margin: 0 3px;
     }    
-}
-
-/*For medium devices*/
-@media screen and (min-width: 768px) {
-
-}
-
-/*For larger devices*/
-@media screen and (min-width: 1120px) {
-
 }

@@ -1,7 +1,7 @@
 const clientesArreglo = [
     {
         descripcion: "CAT LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ferreyros.jpg"
+        img: "../images/catLogo.svg"
     },
     {
         descripcion: "W-CAPITAL LOGO",

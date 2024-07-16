@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
 
 *::selection {
@@ -22,18 +22,19 @@ body {
   min-width: 100vw;
 }
 
-:root{
-    --mainColor: #45495a;
-    --mainColorLight: #5767aa;
-    --mainColorLightHover: #6f7fc7;
-    --textColor: #eee;
-    --darkSeaColor: #012E40;
-    --seaColor: #024959;
-    --lightSeaColor: #026773;
-    --skyLightColor: #3CA6A6;
-    --sandColor: #F2E3D5;
-    --clr-neutral-900: hsl(207, 19%, 9%);
-    --clr-neutral-100: hsl(0,0%, 100%);
+:root {
+  --mainColor: #45495a;
+  --mainColorLight: #5767aa;
+  --mainColorLightHover: #6f7fc7;
+  --textColor: #eee;
+  --darkSeaColor: #012E40;
+  --seaColor: #024959;
+  --lightSeaColor: #026773;
+  --skyLightColor: #3CA6A6;
+  --sandColor: #F2E3D5;
+  --darkBlueColor: #000022;
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar {
@@ -61,7 +62,8 @@ img {
 }
 
 .heading-2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   color: var(--mainColor);
+  margin-bottom: 2rem;
 }

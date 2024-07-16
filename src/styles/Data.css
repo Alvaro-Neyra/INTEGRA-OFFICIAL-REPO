@@ -73,4 +73,7 @@
     .services-container {
         grid-template-columns: 1fr;
     }
+    .services-section {
+        padding: 1rem;
+    }
 }
