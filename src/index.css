@@ -67,3 +67,7 @@ img {
   color: var(--mainColor);
   margin-bottom: 2rem;
 }
+
+svg {
+  fill: #000000;
+}

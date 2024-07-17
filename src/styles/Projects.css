@@ -24,7 +24,7 @@
 .card {
     color: var(--clr-neutral-100);
     background-size: cover;
-    padding: 9rem 0 0;
+    padding: 8.5rem 0 0;
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
@@ -39,13 +39,14 @@
             hsl(20 0% 0% / .3) 20%,
             hsl(0 0% 0% / .6));
     text-align: left;
-    height: 60%;
+    height: 61%;
     width: 100%;
 }
 
 .card__title {
     position: relative;
     width: max-content;
+    font-size: 1.5rem;
 }
 
 .card__title::after {
@@ -67,7 +68,10 @@
 .card__body {
     color: rgb(255 255 255 / 0.8);
     padding: 0.4rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    height: 55%;
+    font-weight: 600;
+    overflow: hidden;
 }
 
 .button {
@@ -168,23 +172,51 @@
 
 /*BREAKPOINTS*/
 
-/*For small devices*/
-@media screen and (max-width: 320px) {
-    .card__data {
-        padding: 1rem;
+/*For medium devices*/
+@media screen and (max-width: 1019px) {
+    .card__body {
+        font-size: 1rem;
     }
 }
 
-/*For medium devices*/
-@media screen and (min-width: 768px) {
-    .card__content {
-        margin-inline: 10rem;
-    }
+/*For small devices*/
 
+@media screen and (max-width: 635px) {
     .card__body {
         font-size: 0.9rem;
     }
+}
 
+@media screen and (max-width: 600px) {
+    .card__body {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card__data {
+        padding: 1rem;
+    }
+    .card__body {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1020px) {
+    .card__title {
+        font-size: 1.3rem;
+    }
+    .card {
+        padding: 9rem 0;
+    }
+    .card__body {
+        font-size: 0.9rem;
+        height: 55%;
+    }
+    .card__content {
+        margin-inline: 6rem;
+    }
     .swiper-button-next,
     .swiper-button-prev {
         display: block;
@@ -192,7 +224,8 @@
 }
 
 /*For larger devices*/
-@media screen and (min-width: 1120px) {
+
+@media screen and (min-width: 1440px) {
     .card__container {
         max-width: 1120px;
     }
@@ -202,10 +235,20 @@
     .swiper-button-next {
         right: 5rem;
     }
-}
-
-@media screen and (min-width: 1440px) {
     .card__body {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        height: 55%;
+    }
+    .card {
+        padding: 7.5rem 0;
+    }
+    .card__title {
+        font-size: 1.7rem;
+    }
+    .card-content {
+        height: 65%;
+    }
+    .card__content {
+        margin-inline: 10rem;
     }
 }

@@ -11,7 +11,7 @@ function InfiniteCarousel() {
                     {
                         Clients.map((client, index) => {
                             return (
-                                <img src={client.img} alt={client.descripcion} key={index} />
+                                <img src={client.img} alt={client.descripcion} key={index}/>
                             )
                         })
                     }

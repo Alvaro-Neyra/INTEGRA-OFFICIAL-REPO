@@ -1,68 +1,69 @@
 const clientesArreglo = [
     {
         descripcion: "CAT LOGO",
-        img: "../images/catLogo.svg"
+        img: "../../public/catLogo.svg"
     },
     {
-        descripcion: "W-CAPITAL LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-w-capital.jpg"
+        descripcion: "3M LOGO",
+        img: "../../public/3m.svg"
     },
     {
         descripcion: "PASTIFICIO LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-pastificio.jpg"
+        img: "../../public/logoPastificio.svg"
     },
     {
-        descripcion: "ARI CONSULTING LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ari-consulting.jpg"
+        descripcion: "FORBES LOGO",
+        img: "../../public/forbes.svg"
     },
     {
         descripcion: "OXXO LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-oxxo.jpg"
+        img: "../../public/oxxoLogo.svg"
     },
     {
-        descripcion: "FERREYCOP LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ferreycop.jpg"
+        descripcion: "BCP LOGO",
+        img: "bcp-4.svg"
     },
     {
-        descripcion: "SAINT PATRICK LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-saint-patrick.jpg"
+        descripcion: "MACYS LOGO",
+        img: "macys.svg"
     },
     {
-        descripcion: "TORTAS GABY LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-tortas-gaby.jpg"
+        descripcion: "BUZZFEED LOGO",
+        img: "buzzfeed.svg"
     },
     {
         descripcion: "CAT LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ferreyros.jpg"
+        img: "../../public/catLogo.svg"
     },
     {
-        descripcion: "W-CAPITAL LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-w-capital.jpg"
+        descripcion: "3M LOGO",
+        img: "../../public/3m.svg"
     },
     {
         descripcion: "PASTIFICIO LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-pastificio.jpg"
+        img: "../../public/logoPastificio.svg"
     },
     {
-        descripcion: "ARI CONSULTING LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ari-consulting.jpg"
+        descripcion: "FORBES LOGO",
+        img: "../../public/forbes.svg"
     },
     {
         descripcion: "OXXO LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-oxxo.jpg"
+        img: "../../public/oxxoLogo.svg"
     },
     {
-        descripcion: "FERREYCOP LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-ferreycop.jpg"
+        descripcion: "BCP LOGO",
+        img: "bcp-4.svg"
     },
     {
-        descripcion: "SAINT PATRICK LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-saint-patrick.jpg"
+        descripcion: "MACYS LOGO",
+        img: "macys.svg"
     },
     {
-        descripcion: "TORTAS GABY LOGO",
-        img: "https://faro51.com/wp-content/uploads/2020/04/Faro-51-clientes-tortas-gaby.jpg"
-    }
+        descripcion: "BUZZFEED LOGO",
+        img: "buzzfeed.svg"
+    },
 ];
+
 
 export default clientesArreglo;

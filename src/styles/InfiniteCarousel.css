@@ -38,8 +38,9 @@
 
 .logos-slide img {
     display: inline-block;
-    height: 95px;
-    margin: 0 3px;
+    height: 50px;
+    margin: 0 40px;
+    color: black;
 }
 
 @keyframes slide {
@@ -55,6 +56,6 @@
 @media screen and (max-width: 576px) {
     .logos-slide img {
         display: inline-block;
-        margin: 0 3px;
+        margin: 0 30px;
     }    
 }
