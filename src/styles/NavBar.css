@@ -129,7 +129,7 @@ header.active nav ul button:hover {
         justify-content: center;
         align-items: center;
         position: fixed;
-        top: -100vh;
+        top: -150vh;
         left: 0;
         height: 100%;
         width: 100%;
@@ -159,7 +159,7 @@ header.active nav ul button:hover {
         margin: 0;
     }
     header .responsive_nav {
-        transform: translateY(100vh);
+        transform: translateY(150vh);
     }
     nav .nav-close-btn {
         position: absolute;
@@ -173,5 +173,24 @@ header.active nav ul button:hover {
 
     nav a{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    header nav a {
+        font-size: 1.1rem;
+    }
+    header nav ul li {
+        gap: 0.5rem;
+    }
+    header nav div ul div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header nav img {
+        width: 150px;
+    }
+    header nav ul button {
+        font-size: 1.1rem;
     }
 }

@@ -9,7 +9,7 @@ function Data({ services }) {
                 {services.map((service, index) => {
                     return (
                     <article className="service-container" key={index} style={{ backgroundImage: `url(${service.image})`}}>
-                        <i className={service.icon}></i>
+                        <i className={service.icon + " service-icon"}></i>
                         <h3 className="service-title">{service.nombre}</h3>
                         <p className="service-description">{service.descripcion}</p>
                         <button className="service-mas-informacion">
