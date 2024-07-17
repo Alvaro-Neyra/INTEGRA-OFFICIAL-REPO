@@ -1,23 +1,23 @@
 const clientesArreglo = [
     {
         descripcion: "CAT LOGO",
-        img: "../../public/catLogo.svg"
+        img: "catLogo.svg"
     },
     {
         descripcion: "3M LOGO",
-        img: "../../public/3m.svg"
+        img: "3m.svg"
     },
     {
         descripcion: "PASTIFICIO LOGO",
-        img: "../../public/logoPastificio.svg"
+        img: "logoPastificio.svg"
     },
     {
         descripcion: "FORBES LOGO",
-        img: "../../public/forbes.svg"
+        img: "forbes.svg"
     },
     {
         descripcion: "OXXO LOGO",
-        img: "../../public/oxxoLogo.svg"
+        img: "oxxoLogo.svg"
     },
     {
         descripcion: "BCP LOGO",
@@ -33,23 +33,23 @@ const clientesArreglo = [
     },
     {
         descripcion: "CAT LOGO",
-        img: "../../public/catLogo.svg"
+        img: "catLogo.svg"
     },
     {
         descripcion: "3M LOGO",
-        img: "../../public/3m.svg"
+        img: "3m.svg"
     },
     {
         descripcion: "PASTIFICIO LOGO",
-        img: "../../public/logoPastificio.svg"
+        img: "logoPastificio.svg"
     },
     {
         descripcion: "FORBES LOGO",
-        img: "../../public/forbes.svg"
+        img: "forbes.svg"
     },
     {
         descripcion: "OXXO LOGO",
-        img: "../../public/oxxoLogo.svg"
+        img: "oxxoLogo.svg"
     },
     {
         descripcion: "BCP LOGO",
