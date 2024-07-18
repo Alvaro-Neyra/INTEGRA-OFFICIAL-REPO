@@ -112,6 +112,10 @@ header.active nav ul button:hover {
     color: var(--textColor);
 }
 
+header.navbar a img.integra-img {
+    width: 300px;
+}
+
 @media only screen and (max-width: 1024px) {
     header .nav-btn {
         display: block;

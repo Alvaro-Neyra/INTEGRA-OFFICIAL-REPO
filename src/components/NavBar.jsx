@@ -1,18 +1,15 @@
-import { useRef } from 'react';
-import { useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import integraLogo from '../images/integra-logo-color.svg';
 import "../styles/NavBar.css"
 
-function NavBar() {
-
+function NavBar({ active, fixed }) {
     const [navBar, setNavBar] = useState(false);
 
     const navRef = useRef();
 
     const showNavbar = () => {
-        navRef.current.classList.toggle(
-            "responsive_nav"
-        );
+        navRef.current.classList.toggle("responsive_nav");
     };
 
     const changeBackground = () => {
@@ -23,16 +20,27 @@ function NavBar() {
         }
     };
 
-    window.addEventListener('scroll', changeBackground);
+    useEffect(() => {
+        if (!active) {
+            window.addEventListener('scroll', changeBackground);
+            return () => {
+                window.removeEventListener('scroll', changeBackground);
+            };
+        } else {
+            setNavBar(true);
+        }
+    }, [active]);
+
+    const headerStyle = fixed ? {} : { position: "static" };
 
     return (
-        <header className={navBar ? "navbar active" : "navbar"}>
+        <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
             <a href="./#">
-                <img src="https://faro51.com/wp-content/uploads/2018/07/logo-faro51-web.png" alt="integra-logo" />
+                <img src={integraLogo} alt="integra-logo" className='integra-img'/>
             </a>
             <nav ref={navRef}>
                 <a href="./#">
-                    <img src="https://faro51.com/wp-content/uploads/2018/07/logo-faro51-web.png" alt="integra-logo" />
+                    <img src={integraLogo} alt="integra-logo" className='integra-img'/>
                 </a>
                 <div>
                     <ul>

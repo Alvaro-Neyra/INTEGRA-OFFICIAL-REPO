@@ -32,10 +32,10 @@ body {
   --lightSeaColor: #026773;
   --skyLightColor: #3CA6A6;
   --sandColor: #F2E3D5;
-  --darkBlueColor: #000022;
+  --darkBlueColor: #26266F;
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-85: hsl(0, 0%, 85%);
   --clr-primary-100: hsl(205, 15%, 58%);
   --clr-primary-400: hsl(215, 25%, 27%);
   --clr-primary-800: hsl(217, 33%, 17%);

@@ -109,13 +109,13 @@
 @media(hover) {
     .card-content {
         transform: translateY(65%);
-        transition: transform 300ms ease;
+        transition: transform 200ms ease;
     }
 
     .card:hover .card-content,
     .card:focus-within .card-content {
         transform: translateY(0);
-        transition-delay: 300ms;
+        transition-delay: 200ms;
     }
 
     .card:focus-within .card-content {
@@ -124,7 +124,7 @@
 
     .card-content>*:not(.card__title, .button) {
         opacity: 0;
-        transition: opacity 300ms linear;
+        transition: opacity 200ms linear;
     }
 
     .card:hover .card-content>*:not(.card__title),

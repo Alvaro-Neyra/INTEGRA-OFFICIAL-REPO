@@ -1,3 +1,4 @@
+import integraLogoBlanco from "../images/integra-logo-blanco.png";
 import "../styles/Footer.css";
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
                 <div className="footer-row-section">
                     <section className="details">
                         <div className="details-main">
-                            <img src="https://faro51.com/wp-content/uploads/2018/07/faro51-footer-n.png" alt="integra-logo" className="details-img" />
+                            <img src={integraLogoBlanco} alt="integra-logo" className="details-img" />
                             <p className="details-p">Desarrollamos estrategias a la medida de sus proyectos.</p>
                         </div>
                         <ul className="social-medias">
