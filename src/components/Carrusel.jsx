@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Carrusel.css";
 
 function Carrusel ({ images }){
@@ -41,8 +42,8 @@ function Carrusel ({ images }){
                             <p className="card-text">{image.text}</p>
                         </article>
                         <section className="button-lists">
-                            <button>Ver Proyecto</button>
-                            <button>Contáctenos</button>
+                            <Link to="/project" className="carousel-btn">Ver Proyecto</Link>
+                            <Link to="/contacts" className="carousel-btn">Contáctenos</Link>
                         </section>
                     </div>
                 })}

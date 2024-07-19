@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import integraLogo from '../images/integra-logo-color.svg';
 import "../styles/NavBar.css"
 
@@ -35,33 +36,30 @@ function NavBar({ active, fixed }) {
 
     return (
         <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
-            <a href="./#">
+            <Link href="/">
                 <img src={integraLogo} alt="integra-logo" className='integra-img'/>
-            </a>
+            </Link>
             <nav ref={navRef}>
-                <a href="./#">
+                <Link href="/">
                     <img src={integraLogo} alt="integra-logo" className='integra-img'/>
-                </a>
+                </Link>
                 <div>
                     <ul>
                         <div>
                             <li>
-                                <a onClick={showNavbar} href="./#">Home</a>
+                                <Link onClick={showNavbar} to="/">Home</Link>
                             </li>
                             <li>
-                                <a onClick={showNavbar} href="./#">Nosotros</a>
+                                <Link onClick={showNavbar} to="/us">Nosotros</Link>
                             </li>
                             <li>
-                                <a onClick={showNavbar} href="./#">Servicios</a>
+                                <Link onClick={showNavbar} to="/services">Servicios</Link>
                             </li>
                             <li>
-                                <a onClick={showNavbar} href="./#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a onClick={showNavbar} href="./#">Contacto</a>
+                                <Link onClick={showNavbar} to="/portfolio">Portfolio</Link>
                             </li>
                         </div>
-                        <button>Contáctenos</button>
+                        <Link to="/contacts" className='contact-btn'>Contáctenos</Link>
                     </ul>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}> <FaTimes /> </button>
                 </div>

@@ -51,7 +51,7 @@ header nav ul li:hover {
     transform: scale(1.1);
 }
 
-header nav ul button {
+header nav ul .contact-btn {
     background-color: var(--textColor);
     outline: none;
     padding: 0.5rem 1rem;
@@ -59,9 +59,11 @@ header nav ul button {
     border-radius: 10px;
     transition: 400ms ease-in;
     font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
 }
 
-header nav ul button:hover {
+header nav ul .contact-btn:hover {
     background-color: var(--mainColorLight);
     color: var(--textColor);
     cursor: pointer;
@@ -101,13 +103,13 @@ header.active nav ul li a:hover {
     color: var(--mainColor);
 }
 
-header.active nav ul button {
+header.active nav ul .contact-btn {
     color: var(--textColor);
     background-color: var(--mainColorLight);
     transition: 400ms ease-in;
 }
 
-header.active nav ul button:hover {
+header.active nav ul .contact-btn:hover {
     background-color: var(--mainColor);
     color: var(--textColor);
 }

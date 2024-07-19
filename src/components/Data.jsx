@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../styles/Data.css";
 
 function Data({ services }) {
@@ -12,12 +13,12 @@ function Data({ services }) {
                         <i className={service.icon + " service-icon"}></i>
                         <h3 className="service-title">{service.nombre}</h3>
                         <p className="service-description">{service.descripcion}</p>
-                        <button className="service-mas-informacion">
+                        <Link to="" className="service-mas-informacion">
                                 <FaArrowRight />
                             <span>
                                 Más información
                             </span>
-                        </button>
+                        </Link>
                     </article>
                     )
                 })}

@@ -64,6 +64,9 @@
     align-items: center;
     font-weight: bold;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-neutral-100);
 }
 .service-mas-informacion:hover {
     background-color: var(--mainColorLight);

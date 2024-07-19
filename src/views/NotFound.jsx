@@ -1,5 +1,6 @@
 import errorImage from "../images/404.svg";
 import arrowNotFound from "../images/flecha-notfound.png";
+import { Link } from "react-router-dom";
 import "../styles/NotFound.css";
 
 function NotFound() {
@@ -16,9 +17,9 @@ function NotFound() {
                     <div className="suggest-container">
                         <p>Tal vez puedas encontrar lo que necesitas aquí:</p>
                         <div className="anchors">
-                            <a href="#" className="red-btn">INICIO</a>
-                            <a href="#" className="blue-btn">SERVICIOS</a>
-                            <a href="#" className="yellow-btn">CONTACTO</a>
+                            <Link to="/" className="red-btn">INICIO</Link>
+                            <Link to="/services" className="blue-btn">SERVICIOS</Link>
+                            <Link to="/contacts" className="yellow-btn">CONTACTO</Link>
                         </div>
                         <img src={arrowNotFound} alt="flecha" className="arrow-notfound" />
                     </div>

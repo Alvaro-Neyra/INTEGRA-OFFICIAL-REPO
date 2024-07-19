@@ -2,6 +2,7 @@ import 'swiper/swiper-bundle.css'
 import projects from "../assets/Projects"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from "swiper/modules";
+import { Link } from 'react-router-dom';
 import "../styles/Projects.css"
 
 function CardSlider() {
@@ -34,7 +35,7 @@ function CardSlider() {
                                     <div className="card-content">
                                         <h3 className="card__title">{project.name}</h3>
                                         <p className="card__body">{project.description}</p>
-                                        <a href="./#" className="button">View More</a>
+                                        <Link to="" className="button">View More</Link>
                                     </div>
                                 </SwiperSlide>
                             );

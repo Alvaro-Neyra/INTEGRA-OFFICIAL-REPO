@@ -71,7 +71,7 @@
     gap: 0.5rem;
 }
 
-.button-lists button {
+.button-lists .carousel-btn {
     background-color: transparent;
     cursor: pointer;
     border: 2px solid white;
@@ -80,21 +80,22 @@
     color: white;
     font-size: 1.5rem;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
 }
 
-.button-lists button:first-child {
+.button-lists .carousel-btn:first-child {
     background-color: #bfbfbf;
     border: 2px solid transparent;
     color: var(--mainColor);
 }
 
-.button-lists button:first-child:hover {
+.button-lists .carousel-btn:first-child:hover {
     background-color: var(--mainColor);
     color: white;
     border: 2px solid transparent;
 }
 
-.button-lists button:hover {
+.button-lists .carousel-btn:hover {
     background-color: white;
     color: var(--mainColor);
     border: 2px solid var(--mainColor);
