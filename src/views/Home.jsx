@@ -16,7 +16,7 @@ export default function Home() {
                 <Carrusel images={Announces}></Carrusel>
                 <Data services={servicios}></Data>
                 <CardSlider/>
-                <InfiniteScroller heading={"Clients"} content={Clients} duration="20s" direction="forwards"/>
+                <InfiniteScroller heading={"Clientes"} content={Clients} duration="20s" direction="forwards"/>
             </main>
             <Footer/>
         </>
