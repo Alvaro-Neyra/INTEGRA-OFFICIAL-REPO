@@ -36,11 +36,11 @@ function NavBar({ active, fixed }) {
 
     return (
         <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
-            <Link href="/">
+            <Link to="/">
                 <img src={integraLogo} alt="integra-logo" className='integra-img'/>
             </Link>
             <nav ref={navRef}>
-                <Link href="/">
+                <Link to="/">
                     <img src={integraLogo} alt="integra-logo" className='integra-img'/>
                 </Link>
                 <div>

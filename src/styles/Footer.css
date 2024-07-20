@@ -88,6 +88,7 @@
     color: var(--textColor);
     padding: 1rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /*For medium devices*/

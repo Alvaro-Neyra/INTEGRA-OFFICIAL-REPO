@@ -171,7 +171,7 @@
     }
     .notfound-container .text-notfound {
         top: 40%;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     .suggest-container {
         position: absolute;
@@ -179,7 +179,13 @@
         left: 0;
         z-index: 1;
         text-align: left;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1100px) and (orientation: landscape) {
+    .main-notfound {
+        left: 10%;
     }
 }
 
@@ -224,12 +230,12 @@
         left: 50%;
         transform: translateX(-50%);
         width: 110%;
-        bottom: -55%;
+        bottom: -45%;
     }
     .notfound-img {
         right: 0;
         left: 50%;
-        bottom: -10%;
+        bottom: -1%;
         transform: translateX(-50%);
         min-width: 100%;
     }
