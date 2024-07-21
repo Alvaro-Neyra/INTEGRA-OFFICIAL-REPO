@@ -21,6 +21,16 @@ const StyledTextCard = styled.div`
             transform: translate(-5px, -5px);
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        padding: 1rem;
+        h2 {
+            font-size: 3vw;
+        }
+        p {
+            font-size: 2vw;
+        }  
+    }
 `;
 
 function TextCard({heading, text}) {
