@@ -7,7 +7,7 @@ header {
     background-color: transparent;
     font-size: 1.2rem;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
 }
 
 header img {
@@ -142,6 +142,7 @@ header.navbar a img.integra-img {
         gap: 1.5rem;
         transition: 1s;
         background-color: var(--mainColor);
+        z-index: 10;
     }
 
     header.active nav {

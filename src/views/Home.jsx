@@ -7,12 +7,19 @@ import InfiniteScroller from "../components/InfiniteScroller"
 import Announces  from "../assets/Announces"
 import servicios from "../assets/Servicios"
 import Clients from "../assets/Clients"
+import { useEffect } from "react"
 
 export default function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }
+    , []);
+
     return (
         <>
             <NavBar active={false} fixed={true}></NavBar>
-            <main>
+            <main id="inicio-title">
                 <Carrusel images={Announces}></Carrusel>
                 <Data services={servicios}></Data>
                 <CardSlider/>

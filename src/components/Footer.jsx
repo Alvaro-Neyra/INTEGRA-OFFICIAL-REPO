@@ -23,11 +23,11 @@ function Footer() {
                                 <h2>Menú</h2>
                                 <ul>
                                     <li><Link to="/">Inicio</Link></li>
-                                    <li><Link to="/us">Nosotros</Link></li>
-                                    <li><Link to="/services">Servicios</Link></li>
-                                    <li><Link to="/projects">Proyectos Faro</Link></li>
+                                    <li><Link to="/nosotros">Nosotros</Link></li>
+                                    <li><Link to="/servicios">Servicios</Link></li>
+                                    <li><Link to="/proyectos">Proyectos Faro</Link></li>
                                     <li><Link to="">Metodología de Gestión</Link></li>
-                                    <li><Link to="/contacts">Contacto</Link></li>
+                                    <li><Link to="/contacto">Contacto</Link></li>
                                 </ul>
                             </section>
                             <section className="services-footer">

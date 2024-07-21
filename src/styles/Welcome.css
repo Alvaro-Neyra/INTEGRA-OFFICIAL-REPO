@@ -111,10 +111,11 @@
     }
     .we-text {
         width: 100%;
+        padding: 0.5rem;
     }
     .we-image {
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 80vw;
     }
     .welcome-container {
         padding: 1rem;

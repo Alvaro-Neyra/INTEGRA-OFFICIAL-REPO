@@ -50,16 +50,16 @@ function NavBar({ active, fixed }) {
                                 <Link onClick={showNavbar} to="/">Home</Link>
                             </li>
                             <li>
-                                <Link onClick={showNavbar} to="/us">Nosotros</Link>
+                                <Link onClick={showNavbar} to="/nosotros">Nosotros</Link>
                             </li>
                             <li>
-                                <Link onClick={showNavbar} to="/services">Servicios</Link>
+                                <Link onClick={showNavbar} to="/servicios">Servicios</Link>
                             </li>
                             <li>
                                 <Link onClick={showNavbar} to="/portfolio">Portfolio</Link>
                             </li>
                         </div>
-                        <Link to="/contacts" className='contact-btn'>Contáctenos</Link>
+                        <Link to="/contacto" className='contact-btn'>Contáctenos</Link>
                     </ul>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}> <FaTimes /> </button>
                 </div>

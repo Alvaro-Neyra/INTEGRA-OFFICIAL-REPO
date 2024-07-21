@@ -19,8 +19,8 @@ function NotFound() {
                             <p>Tal vez puedas encontrar lo que necesitas aquí:</p>
                             <div className="anchors">
                                 <Link to="/" className="red-btn">INICIO</Link>
-                                <Link to="/services" className="blue-btn">SERVICIOS</Link>
-                                <Link to="/contacts" className="yellow-btn">CONTACTO</Link>
+                                <Link to="/servicios" className="blue-btn">SERVICIOS</Link>
+                                <Link to="/contacto" className="yellow-btn">CONTACTO</Link>
                             </div>
                             <img src={arrowNotFound} alt="flecha" className="arrow-notfound" />
                         </div>
