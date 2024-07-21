@@ -8,6 +8,7 @@
     margin-top: 3rem;
 }
 .services-title {
+    text-align: center;
     font-size: 3rem;
     color: var(--mainColor);
     margin-bottom: 2rem;
@@ -34,6 +35,7 @@
     background-position-x: right;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
 }
 .service-container:hover {
     transform: scale(105%);
