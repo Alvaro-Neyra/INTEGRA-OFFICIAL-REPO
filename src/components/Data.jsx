@@ -5,7 +5,7 @@ import "../styles/Data.css";
 function Data({ services }) {
     return (
         <section className="services-section">
-            <h2 className="services-title">Nuestros servicios</h2>
+            <h2 className="services-title heading-2">Nuestros servicios</h2>
             <div className="services-container">
                 {services.map((service, index) => {
                     return (

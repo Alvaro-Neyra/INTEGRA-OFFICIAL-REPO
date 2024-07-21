@@ -12,22 +12,25 @@ const StyledLink = styled(Link)`
     text-align: center;
     background-color: ${props => props.backgroundColor};
     color: ${props => props.colorText};
-    @media(hover) {
-        &:hover {
-            background-color: ${props => props.backgroundHover};
-            color: ${props => props.colorHover};
-        }
+
+    &:hover {
+        background-color: ${props => props.backgroundHover};
+        color: ${props => props.colorHover};
     }
 `;
 
 function ButtonLink({ route, text, backgroundColor, backgroundHover, colorHover, colorText }) {
+    const linkProps = { 
+        to: route, 
+        backgroundColor, 
+        backgroundHover, 
+        colorHover, 
+        colorText 
+    };
+
     return (
         <StyledLink
-            to={route}
-            backgroundColor={backgroundColor}
-            backgroundHover={backgroundHover}
-            colorText={colorText}
-            colorHover={colorHover}
+            {...linkProps}
         >
             {text}
         </StyledLink>
