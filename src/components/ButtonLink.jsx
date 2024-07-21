@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -13,9 +12,11 @@ const StyledLink = styled(Link)`
     text-align: center;
     background-color: ${props => props.backgroundColor};
     color: ${props => props.colorText};
-    &:hover {
-        background-color: ${props => props.backgroundHover};
-        color: ${props => props.colorHover};
+    @media(hover) {
+        &:hover {
+            background-color: ${props => props.backgroundHover};
+            color: ${props => props.colorHover};
+        }
     }
 `;
 
