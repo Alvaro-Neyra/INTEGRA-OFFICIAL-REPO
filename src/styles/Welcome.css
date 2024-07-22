@@ -98,24 +98,24 @@
 @media only screen and (max-width: 1024px) {
     .we-text h1 {
         align-items: center;
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .us-text {
         align-items: center;
         text-align: center;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .we {
         justify-content: center;
         flex-direction: column;
     }
     .we-text {
-        width: 100%;
+        width: 90vw;
         padding: 0.5rem;
     }
     .we-image {
-        width: 80vw;
-        height: 80vw;
+        width: 100vw;
+        height: 100vw;
     }
     .welcome-container {
         padding: 1rem;

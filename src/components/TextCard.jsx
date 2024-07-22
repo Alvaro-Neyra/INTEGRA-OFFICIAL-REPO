@@ -28,7 +28,7 @@ const StyledTextCard = styled.div`
             font-size: 3vw;
         }
         p {
-            font-size: 2vw;
+            font-size: 3vw;
         }  
     }
 `;

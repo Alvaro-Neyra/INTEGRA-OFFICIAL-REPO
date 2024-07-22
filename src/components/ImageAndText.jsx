@@ -53,13 +53,13 @@ const StyledDiv = styled.div`
         width: 100vw;
         order: 1;
         h2 {
-            font-size: 3vw;
+            font-size: 4vw;
         }
         h2 span:nth-child(2) {
-            font-size: 5vw;
+            font-size: 6vw;
         }
         p {
-            font-size: 2.5vw;
+            font-size: 3vw;
         }
     }
 `;
