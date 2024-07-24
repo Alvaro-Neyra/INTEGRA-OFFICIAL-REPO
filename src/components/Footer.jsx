@@ -1,8 +1,12 @@
 import integraLogoBlanco from "../images/integra-logo-blanco.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import ButtonLink from "./ButtonLink";
 import "../styles/Footer.css";
 
 function Footer() {
+
+    const { pathname } = useLocation();
+
     return (
         <>
             <footer className="footer">
@@ -22,21 +26,21 @@ function Footer() {
                             <section className="menu-footer">
                                 <h2>Menú</h2>
                                 <ul>
-                                    <li><Link to="/">Inicio</Link></li>
-                                    <li><Link to="/nosotros">Nosotros</Link></li>
-                                    <li><Link to="/servicios">Servicios</Link></li>
-                                    <li><Link to="/proyectos">Proyectos Faro</Link></li>
-                                    <li><Link to="">Metodología de Gestión</Link></li>
-                                    <li><Link to="/contacto">Contacto</Link></li>
+                                    <li><ButtonLink active={pathname === '/'} to="/">Inicio</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/nosotros'} to="/nosotros">Nosotros</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios'} to="/servicios">Servicios</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/proyectos'} to="/proyectos">Proyectos</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === ''} to="">Metodología de Gestión</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/contacto'} to="/contacto">Contacto</ButtonLink></li>
                                 </ul>
                             </section>
                             <section className="services-footer">
                                 <h2>Servicios</h2>
                                 <ul>
-                                    <li><Link to="">Construcción</Link></li>
-                                    <li><Link to="">Gerencia de Proyectos</Link></li>
-                                    <li><Link to="">Inmobiliaria</Link></li>
-                                    <li><Link to="">Expediente técnico</Link></li>
+                                    <li><ButtonLink active={pathname === '/servicios/construccion'} to="/servicios/construccion">Construcción</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia de Proyectos</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente técnico</ButtonLink></li>
                                 </ul>
                             </section>
                             <section className="contacts-footer">

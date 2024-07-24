@@ -21,7 +21,7 @@ function Innovation() {
                     <h2>Innovación</h2>
                     <p>Nuestro enfoque principal es del desarrollo de proyectos inmobiliarios de edificaciones (viviendas, comercio y oficinas), habilitaciones urbanas con fines inmobiliarios (lotizaciones de vivienda, comercio e industria) y sistemas de utilización de media y baja tensión (redes de distribución y alumbrado, subestaciones eléctricas) , logramos proyectos con alta rentabilidad y aseguramos la inversión de nuestros clientes y agregando valor al usuario final. contamos con certificación iso 9001-2015 lo que garantiza la calidad de nuestros servicios a nuestro cliente.</p>
                     <p>Conoce nuestros servicios:</p>
-                    <ButtonLink className="innovation-btn" route="/servicios" text="Ver Servicios" backgroundColor="rgb(100, 179, 244)" backgroundHover="#6f7fc7" colorText="hsl(0, 0%, 100%)" width="25vw" fontSize="180%"></ButtonLink>
+                    <ButtonLink active className="innovation-btn" to="/servicios" backgroundActive="rgb(100, 179, 244)" backgroundActiveHover="#6f7fc7" colorActive="hsl(0, 0%, 100%)" width="25vw" fontSize="180%">Ver Servicios</ButtonLink>
                 </div>
             </section>
         </>

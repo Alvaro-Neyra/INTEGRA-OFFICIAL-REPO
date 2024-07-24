@@ -16,12 +16,12 @@ function Nosotros() {
 
     return (
         <>
-            <NavBar active={true} fixed={false}></NavBar>
+            <NavBar active={true} position={"static"}></NavBar>
             <main>
                 <Welcome></Welcome>
                 <Innovation></Innovation>
-                <ImageAndText firstText={false} firstHeading="Nuestra" secondHeading="Mision" text="Nuestra misión es ser una empresa líder en la industria de la construcción, ofreciendo servicios de calidad y soluciones innovadoras a nuestros clientes. Nos esforzamos por superar las expectativas de nuestros clientes y ser un socio confiable en todos los proyectos de construcción." image={missionImage} backgroundColor="hsl(0, 0%, 95%)"></ImageAndText>
-                <ImageAndText firstText={true} firstHeading="Nuestra" secondHeading="Vision" text="Nuestra visión es ser reconocidos como una empresa líder en la industria de la construcción, ofreciendo servicios de calidad y soluciones innovadoras a nuestros clientes. Nos esforzamos por superar las expectativas de nuestros clientes y ser un socio confiable en todos los proyectos de construcción." image={visionImage} backgroundColor="hsl(0, 0%, 95%)"></ImageAndText>
+                <ImageAndText firstText={false} firstHeading="Nuestra" secondHeading="Mision" text="Nuestra misión es ser una empresa líder en la industria de la construcción, ofreciendo servicios de calidad y soluciones innovadoras a nuestros clientes. Nos esforzamos por superar las expectativas de nuestros clientes y ser un socio confiable en todos los proyectos de construcción." image={missionImage} backgroundColor="hsl(0, 0%, 95%)" width={"50vw"}></ImageAndText>
+                <ImageAndText firstText={true} firstHeading="Nuestra" secondHeading="Vision" text="Nuestra visión es ser reconocidos como una empresa líder en la industria de la construcción, ofreciendo servicios de calidad y soluciones innovadoras a nuestros clientes. Nos esforzamos por superar las expectativas de nuestros clientes y ser un socio confiable en todos los proyectos de construcción." image={visionImage} backgroundColor="hsl(0, 0%, 95%)" width={"50vw"}></ImageAndText>
                 <Values></Values>
             </main>
             <Footer></Footer>

@@ -13,7 +13,7 @@ function Data({ services }) {
                         <i className={service.icon + " service-icon"}></i>
                         <h3 className="service-title">{service.nombre}</h3>
                         <p className="service-description">{service.descripcion}</p>
-                        <Link to="" className="service-mas-informacion">
+                        <Link to={service.route} className="service-mas-informacion">
                                 <FaArrowRight />
                             <span>
                                 Más información

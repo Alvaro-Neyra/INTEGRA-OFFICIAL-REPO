@@ -61,6 +61,7 @@
     font-size: 1.2rem;
     color: var(--textColor);
     transition: all 500ms ease;
+    padding: 0;
 }
 .nav-footer ul li a:hover, .nav-footer ul li a:focus, .nav-footer ul li a:active {
     color: var(--mainColorLight);

@@ -1,10 +1,14 @@
 import { useRef, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import ButtonLink from './ButtonLink';
 import integraLogo from '../images/integra-logo-color.svg';
 import "../styles/NavBar.css"
 
-function NavBar({ active, fixed }) {
+function NavBar({ active, position }) {
+
+    const { pathname } = useLocation();
+
     const [navBar, setNavBar] = useState(false);
 
     const navRef = useRef();
@@ -32,7 +36,7 @@ function NavBar({ active, fixed }) {
         }
     }, [active]);
 
-    const headerStyle = fixed ? {} : { position: "static" };
+    const headerStyle = { position: position };
 
     return (
         <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
@@ -47,16 +51,16 @@ function NavBar({ active, fixed }) {
                     <ul>
                         <div>
                             <li>
-                                <Link onClick={showNavbar} to="/">Home</Link>
+                                <ButtonLink active={pathname === '/'} onClick={showNavbar} to="/">Home</ButtonLink>
                             </li>
                             <li>
-                                <Link onClick={showNavbar} to="/nosotros">Nosotros</Link>
+                                <ButtonLink active={pathname === '/nosotros'} onClick={showNavbar} to="/nosotros">Nosotros</ButtonLink>
                             </li>
                             <li>
-                                <Link onClick={showNavbar} to="/servicios">Servicios</Link>
+                                <ButtonLink active={pathname === '/servicios'} onClick={showNavbar} to="/servicios">Servicios</ButtonLink>
                             </li>
                             <li>
-                                <Link onClick={showNavbar} to="/portfolio">Portfolio</Link>
+                                <ButtonLink active={pathname === '/portfolio'} onClick={showNavbar} to="/portfolio">Portfolio</ButtonLink>
                             </li>
                         </div>
                         <Link to="/contacto" className='contact-btn'>Contáctenos</Link>

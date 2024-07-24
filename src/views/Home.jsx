@@ -18,7 +18,7 @@ export default function Home() {
 
     return (
         <>
-            <NavBar active={false} fixed={true}></NavBar>
+            <NavBar active={false} position={"fixed"}></NavBar>
             <main id="inicio-title">
                 <Carrusel images={Announces}></Carrusel>
                 <Data services={servicios}></Data>
