@@ -41,7 +41,7 @@ button h2{
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px){
     .servicios-main {
         flex-direction: column;
         text-align: center;

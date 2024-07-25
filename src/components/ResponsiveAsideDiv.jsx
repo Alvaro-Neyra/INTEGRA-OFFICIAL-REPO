@@ -23,6 +23,9 @@ const ResponsiveAside = styled.div`
         font-size: 3vw;
         border-block: 1px solid #012E40;
     }
+    @media only screen and (max-width: 500px) {
+            font-size: 5vw; 
+    }
 `
 
 const StyledAsideButton = styled.button`
@@ -53,6 +56,11 @@ const StyledAsideButton = styled.button`
         }
         &.responsive-aside-button .asidenav-btn:hover path {
             fill: rgba(0, 0, 0, 0.2);
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        &.responsive-aside-button {
+            font-size: 7vw; 
         }
     }
 `;

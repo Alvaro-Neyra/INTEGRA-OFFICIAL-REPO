@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import NavAsideLink from "./NavAsideLink";
@@ -13,17 +13,22 @@ const StyledAsideRef = styled.aside`
     align-items: center;
     border-left: 5px solid #012E40;
     width: 20vw;
-    height: 101vh;
+    height: 0;
+    max-height: 200vh;
     transition: transform 200ms ease;
     h2 {
-        font-size: 2vw;
+        font-size: 4vw;
         text-align: center;
         color: #012E40;
         margin-top: 3vw;
     }
     nav {
-        width: 20vw;
+        width: 100%;
         padding: 1vw;
+        height: 25%;
+        overflow: hidden; /* Add a scrollbar if needed */
+        overflow-x: hidden;
+        mask-image: linear-gradient(180deg, #000 0 calc(100% - 6rem), #0000);
     }
     ul {
         list-style-type: none;
@@ -34,9 +39,12 @@ const StyledAsideRef = styled.aside`
         gap: 1.6vw;
         width: 100%;
     }
-
+    ul li {
+        width: 100%;
+    }
     @media only screen and (max-width: 1024px) { 
         transform: translateX(-200%);
+        height: 200vh;
         &.responsive-aside {
             z-index: 5;
             background-color: white;
@@ -44,29 +52,71 @@ const StyledAsideRef = styled.aside`
             visibility: visible;
             align-items: flex-start;
             width: 50vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         &.responsive-aside h2 {
             width: 100%;
         }
+    }
+    @media only screen and (max-width: 500px) {
+        ul {
+            gap: 4vw;
+        }
+        h2 {
+            font-size: 5.5vw;
+        }
+        a {
+            font-size: 4vw;
+        }
+        &.responsive-aside {
+            width: 60vw;
+        }
+    }
+`;
+
+const NavBarAsideShadow = styled.div`
+    display: none;
+    @media only screen and (max-width: 1024px) {
+            cursor: pointer;
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 50vw;
+            height: 200vh;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: none;
     }
 `;
 
 const NavBarAsideRef = forwardRef((props, ref) => {
     const { pathname } = useLocation();
 
+    const ShadowContainer = useRef(null);
+
+    const clickShadow = ((e) => {
+        if (e.target === ShadowContainer.current && ref.current.classList.contains('responsive-aside')) {
+            ref.current.classList.remove('responsive-aside');
+        }
+    })
+
     return (
         <StyledAsideRef ref={ref} {...props}>
             <h2>Servicios</h2>
             <nav>
                 <ul>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/construccion'} to="/servicios/construccion">Construcción</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia De Proyectos</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente Técnico</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica">Inspección Técnica</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra">Supervisión de Obra</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/construccion'} to="/servicios/construccion">Construcción</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia De Proyectos</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente Técnico</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica">Inspección Técnica</NavAsideLink>
+                    <NavAsideLink width={"100%"} fontSize="3vw" fontSizeActive="3vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra">Supervisión de Obra</NavAsideLink>
                 </ul>
             </nav>
+            <NavBarAsideShadow ref={ShadowContainer} onClick={clickShadow}></NavBarAsideShadow>
         </StyledAsideRef>
     );
 });
