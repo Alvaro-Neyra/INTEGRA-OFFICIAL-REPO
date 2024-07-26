@@ -100,6 +100,7 @@ const NavBarAsideRef = forwardRef((props, ref) => {
     const clickShadow = ((e) => {
         if (e.target === ShadowContainer.current && ref.current.classList.contains('responsive-aside')) {
             ref.current.classList.remove('responsive-aside');
+            document.body.classList.remove('no-scroll');
         }
     })
 

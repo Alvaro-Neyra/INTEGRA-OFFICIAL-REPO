@@ -72,6 +72,11 @@ function ResponsiveAsideDiv() {
 
     const showNavbar = () => {
         NavAside.current.classList.toggle("responsive-aside");
+        if (NavAside.current.classList.contains("responsive-aside")) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
     };
 
 

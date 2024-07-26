@@ -4,7 +4,7 @@ import "../styles/Data.css";
 
 function Data({ services }) {
     return (
-        <section className="services-section">
+        <section id="services" className="services-section">
             <h2 className="services-title heading-2">Nuestros servicios</h2>
             <div className="services-container">
                 {services.map((service, index) => {

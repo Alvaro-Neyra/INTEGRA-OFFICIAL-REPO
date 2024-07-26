@@ -44,9 +44,15 @@ function NavAsideLink({ active, to, children, backgroundColor, backgroundHover, 
         to
     };
 
+    const setScroll = () => {
+        if (document.body.classList.contains('no-scroll')) {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
     return (
         <StyledLi width={width}>
-        <StyledNavAsideLink {...linkProps}>
+        <StyledNavAsideLink {...linkProps} onClick={setScroll}>
             {children}
         </StyledNavAsideLink>
         </StyledLi>
