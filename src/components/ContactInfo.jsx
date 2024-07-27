@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/ContactInfo.css";
 
 function ContactInfo() {
@@ -18,7 +17,7 @@ function ContactInfo() {
                     </li>
                     <li>
                         <div>
-                            <i class="fa-solid fa-phone"></i>
+                            <i className="fa-solid fa-phone"></i>
                         </div>
                         <article>
                             <h3>CELULAR:</h3>
@@ -41,8 +40,8 @@ function ContactInfo() {
                 </ul>
                 <div className="social-media-container">
                     <ul>
-                        <li><i className="fa-brands fa-facebook"><Link></Link></i></li>
-                        <li><i className="fa-brands fa-linkedin"><Link></Link></i></li>
+                        <li><i className="fa-brands fa-facebook"><a href=""></a></i></li>
+                        <li><i className="fa-brands fa-linkedin"><a href=""></a></i></li>
                     </ul>
                 </div>
             </div>

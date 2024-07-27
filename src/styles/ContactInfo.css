@@ -18,6 +18,7 @@
 
 .contact-info h2 span:first-child {
     color: var(--mainColor);
+    font-size: 2vw;
 }
 
 .contact-info h2 span:last-child {
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 3vw;
+    width: 100%;
 }
 
 .contact-information-container ul {
@@ -52,12 +54,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: var(--clr-neutral-100);
 }
 
 .contact-information-container ul li article {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
@@ -109,12 +111,20 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .contact-info h2 {
-        font-size: 3vw;
+    .contact-info h2 span:first-child{
+        font-size: 5vw;
     }
 
     .contact-info h2 span:last-child {
-        font-size: 4.5vw;
+        font-size: 6vw;
+    }
+
+    .contact-information-container {
+        gap: 6vw;
+    }
+
+    .contact-information-container ul li {
+        gap: 3vw;
     }
 
     .contact-information-container ul li div {
@@ -127,28 +137,45 @@
         font-size: 3vw;
     }
 
+    .contact-information-container ul li article p{
+        font-size: 3vw;
+    }
+
     .social-media-container ul li i {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .contact-info h2 {
-        font-size: 2.5rem;
+    .contact-info h2 span:first-child{
+        font-size: 5vw;
     }
 
     .contact-info h2 span:last-child {
-        font-size: 3.5rem;
+        font-size: 7vw;
+    }
+
+    .contact-information-container {
+        gap: 8vw;
+    }
+
+    .contact-information-container ul li {
+        gap: 3vw;
     }
 
     .contact-information-container ul li div {
-        width: 12vw;
-        height: 12vw;
-        font-size: 5vw;
+        width: 9vw;
+        height: 9vw;
+        font-size: 4vw;
     }
 
     .contact-information-container ul li article {
         font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    .contact-information-container ul li article p{
+        font-size: 4vw;
     }
 
     .social-media-container ul li i {

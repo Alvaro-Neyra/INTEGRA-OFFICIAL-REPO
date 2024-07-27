@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import contactoImage from "../images/contacto-hero-image.jpg";
 import AbsoluteElements from "../components/AbsoluteElements";
 import ContactInfo from "../components/ContactInfo";
+import Form from "../components/Form";
 import "../styles/Contacts.css";
 
 function Contacts() {
@@ -19,6 +20,7 @@ function Contacts() {
             <HeroImage image={contactoImage} heading="Contacto"/>
             <main className="contacts-main">
                 <ContactInfo></ContactInfo>
+                <Form></Form>
             </main>
         <Footer></Footer>
         <AbsoluteElements></AbsoluteElements>
