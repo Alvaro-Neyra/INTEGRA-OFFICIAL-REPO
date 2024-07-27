@@ -11,6 +11,7 @@ import ServiciosInspeccion from './views/ServiciosInspeccion';
 import ServiciosSupervision from './views/ServiciosSupervision';
 import NotFound from './views/NotFound';
 import Portfolio from './views/Portfolio';
+import Contacts from './views/Contacts';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     { path: '/servicios/inspeccion-tecnica', element: <ServiciosInspeccion/> },
     { path: '/servicios/supervision-de-obra', element: <ServiciosSupervision/> },
     { path: '/portfolio', element: <Portfolio/> },
+    { path: '/contacto', element: <Contacts /> },
     { path: '/*', element: <NotFound /> }
   ]);
 

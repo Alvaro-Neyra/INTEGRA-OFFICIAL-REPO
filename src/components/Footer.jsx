@@ -29,7 +29,7 @@ function Footer() {
                                     <li><ButtonLink active={pathname === '/'} to="/">Inicio</ButtonLink></li>
                                     <li><ButtonLink active={pathname === '/nosotros'} to="/nosotros">Nosotros</ButtonLink></li>
                                     <li><ButtonLink active={pathname === '/servicios'} to="/servicios">Servicios</ButtonLink></li>
-                                    <li><ButtonLink active={pathname === '/proyectos'} to="/proyectos">Proyectos</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/portfolio'} to="/portfolio">Portfolio</ButtonLink></li>
                                     <li><ButtonLink active={pathname === ''} to="">Metodología de Gestión</ButtonLink></li>
                                     <li><ButtonLink active={pathname === '/contacto'} to="/contacto">Contacto</ButtonLink></li>
                                 </ul>
