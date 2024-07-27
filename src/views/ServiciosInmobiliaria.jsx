@@ -6,6 +6,7 @@ import ImagenAndTextService from "../components/ImageAndTextService";
 import projectPhases from "../assets/ProjectPhases";
 import "../styles/Servicios.css";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 function ServiciosInmobiliaria() {
     useEffect(() => {
@@ -43,6 +44,7 @@ function ServiciosInmobiliaria() {
                 </main>
             </section>
             <Footer></Footer>
+            <AbsoluteElements></AbsoluteElements>
         </>);
 }
 

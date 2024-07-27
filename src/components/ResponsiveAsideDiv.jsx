@@ -15,7 +15,7 @@ const ResponsiveAside = styled.div`
     padding-block: 0;
     height: 10vw;
     max-height: 10vw;
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) and (orientation: portrait) {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -23,7 +23,7 @@ const ResponsiveAside = styled.div`
         font-size: 3vw;
         border-block: 1px solid #012E40;
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) and (orientation: portrait) {
             font-size: 5vw; 
     }
 `
@@ -34,7 +34,7 @@ const StyledAsideButton = styled.button`
     cursor: pointer;
     height: 5vw;
     max-height: 5vw;
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) and (orientation: portrait) {
         &.responsive-aside-button {
             display: flex;
             margin: 1vw 0;
@@ -58,7 +58,7 @@ const StyledAsideButton = styled.button`
             fill: rgba(0, 0, 0, 0.2);
         }
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) and (orientation: portrait) {
         &.responsive-aside-button {
             font-size: 7vw; 
         }

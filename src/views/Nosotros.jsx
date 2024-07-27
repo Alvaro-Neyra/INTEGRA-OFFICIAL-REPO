@@ -7,6 +7,7 @@ import Values from "../components/Values";
 import { useEffect } from "react";
 import missionImage from "../images/mision.jpg";
 import visionImage from "../images/vision.jpg";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 function Nosotros() {
     useEffect(() => {
@@ -25,6 +26,7 @@ function Nosotros() {
                 <Values></Values>
             </main>
             <Footer></Footer>
+            <AbsoluteElements/>
         </>
     );
 }

@@ -41,7 +41,7 @@ button h2{
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
     .servicios-main {
         flex-direction: column;
         text-align: center;
@@ -74,7 +74,7 @@ button h2{
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) and (orientation: portrait){
     div h2 {
         font-size: 5vw;
     }

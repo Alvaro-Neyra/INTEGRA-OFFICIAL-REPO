@@ -8,6 +8,7 @@ import AccordionSet from "../components/AccordionSet";
 import { AccordionsConstruccion } from "../assets/AccordionArrays";
 import "../styles/Servicios.css";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 const paragraphs = [
     "Nuestro equipo de expertos en implementación y equipamiento se encarga de cada detalle, desde el diseño inicial hasta la finalización del proyecto. Nos esforzamos por superar las expectativas de nuestros clientes y entregar proyectos a tiempo y dentro del presupuesto.",
@@ -56,6 +57,7 @@ function ServiciosConstruccion() {
                 </main>
             </section>
             <Footer></Footer>
+            <AbsoluteElements></AbsoluteElements>
         </>);
 }
 

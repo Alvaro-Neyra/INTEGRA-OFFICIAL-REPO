@@ -42,7 +42,7 @@ const StyledAsideRef = styled.aside`
     ul li {
         width: 100%;
     }
-    @media only screen and (max-width: 1024px) { 
+    @media only screen and (max-width: 1024px) and (orientation: portrait) { 
         transform: translateX(-200%);
         height: 200vh;
         &.responsive-aside {
@@ -58,7 +58,7 @@ const StyledAsideRef = styled.aside`
             width: 100%;
         }
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) and (orientation: portrait) {
         ul {
             gap: 4vw;
         }
@@ -76,7 +76,7 @@ const StyledAsideRef = styled.aside`
 
 const NavBarAsideShadow = styled.div`
     display: none;
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1024px) and (orientation: portrait) {
             cursor: pointer;
             display: block;
             content: '';

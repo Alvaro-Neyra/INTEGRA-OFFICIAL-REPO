@@ -86,8 +86,96 @@ svg {
   overflow: hidden;
 }
 
+.absolute-container {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  z-index: 9;
+}
+
+.gototop-btn {
+  background-color: var(--mainColorLight);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  font-size: 2vw;
+}
+
+.gototop-btn svg {
+  fill: var(--clr-neutral-100);
+  transition: all 500ms ease-in-out;
+}
+
+.gototop-btn:hover {
+  background-color: var(--clr-neutral-100);
+}
+
+.gototop-btn:hover svg{
+  fill: var(--clr-neutral-900);
+}
+
+.whatsapp-icon {
+  background-color: var(--mainColorLight);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  font-size: 2vw;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-icon svg {
+  fill: var(--clr-neutral-100);
+  transition: all 500ms ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-icon:hover, .whatsapp-icon:active {
+  background-color: var(--clr-neutral-100);
+}
+
+.whatsapp-icon:hover svg, .whatsapp-icon:active svg {
+  fill: var(--clr-neutral-900);
+}
+
+@media screen and (max-width: 1000px) {
+  .gototop-btn {
+    font-size: 3vw;
+    padding: 1vw 1.5vw;
+  }
+  .whatsapp-icon {
+    width: 7vw;
+    height: 7vw;
+    font-size: 3vw;
+  }
+  .whatsapp-icon svg {
+    width: 90%;
+    height: 90%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .heading-2 {
     font-size: 2.5rem;
+  }
+  .gototop-btn {
+    font-size: 5vw;
+    padding: 1.5vw 2vw;
+  }
+  .whatsapp-icon {
+    width: 10vw;
+    height: 10vw;
+    font-size: 5vw;
   }
 }

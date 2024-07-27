@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import NavBarAside from "../components/NavBarAside";
 import "../styles/Servicios.css";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 function ServiciosInspeccion() {
     useEffect(() => {
@@ -22,6 +23,7 @@ function ServiciosInspeccion() {
         </main>
         </section>
         <Footer></Footer>
+        <AbsoluteElements></AbsoluteElements>
         </>
     );
 }

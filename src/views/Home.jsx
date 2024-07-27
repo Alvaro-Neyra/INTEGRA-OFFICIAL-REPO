@@ -7,6 +7,7 @@ import InfiniteScroller from "../components/InfiniteScroller"
 import Announces  from "../assets/Announces"
 import servicios from "../assets/Servicios"
 import Clients from "../assets/Clients"
+import AbsoluteElements from "../components/AbsoluteElements"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
                 <InfiniteScroller heading={"Clientes"} content={Clients} duration="20s" direction="forwards"/>
             </main>
             <Footer/>
+            <AbsoluteElements/>
         </>
     )
 }

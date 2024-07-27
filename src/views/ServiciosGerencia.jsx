@@ -5,8 +5,10 @@ import NavBarAside from "../components/NavBarAside";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
 import ImagenAndTextService from "../components/ImageAndTextService";
 import AccordionSet from "../components/AccordionSet";
+import GoToTop from "../components/GoToTop";
 import { AccordionsGerencia } from "../assets/AccordionArrays";
 import "../styles/Servicios.css";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 function ServiciosGerencia() {
     useEffect(() => {
@@ -38,6 +40,7 @@ function ServiciosGerencia() {
                 </main>
             </section>
             <Footer></Footer>
+            <AbsoluteElements></AbsoluteElements>
         </>);
 }
 

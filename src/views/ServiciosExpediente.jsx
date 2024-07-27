@@ -7,6 +7,7 @@ import AccordionSet from "../components/AccordionSet";
 import { AccordionsExpediente } from "../assets/AccordionArrays";
 import "../styles/Servicios.css";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
+import AbsoluteElements from "../components/AbsoluteElements";
 
 function ServiciosExpediente() {
     useEffect(() => {
@@ -34,6 +35,7 @@ function ServiciosExpediente() {
                 </main>
             </section>
             <Footer></Footer>
+            <AbsoluteElements></AbsoluteElements>
         </>);
 }
 
