@@ -52,6 +52,7 @@
 }
 .nav-footer h2 {
     padding: 1rem 0;
+    font-size: 1.5vw;
 }
 .nav-footer ul {
     list-style-type: none;
@@ -99,6 +100,9 @@
         padding: 1;
         align-items: center;
     }
+    .nav-footer h2 {
+        font-size: 3vw;
+    }
     .main-footer nav {
         gap: 5rem;
     }
@@ -137,6 +141,9 @@
     .nav-footer {
         flex-direction: column;
     }
+    .nav-footer h2 {
+        font-size: 5vw;
+    }
     .main-footer nav {
         gap: 1rem;
     }
@@ -165,5 +172,17 @@
     }
     .title-list {
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-footer h2 {
+        font-size: 6vw;
+    }
+    .main-footer nav ul {
+        gap: 1rem;
+    }
+    .contacts-footer ul {
+        font-size: 1rem;
     }
 }

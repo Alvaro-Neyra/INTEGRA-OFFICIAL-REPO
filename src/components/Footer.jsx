@@ -41,6 +41,8 @@ function Footer() {
                                     <li><ButtonLink active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia de Proyectos</ButtonLink></li>
                                     <li><ButtonLink active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</ButtonLink></li>
                                     <li><ButtonLink active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente técnico</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica">Inspección técnica</ButtonLink></li>
+                                    <li><ButtonLink active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra">Supervisión de obra</ButtonLink></li>
                                 </ul>
                             </section>
                             <section className="contacts-footer">
