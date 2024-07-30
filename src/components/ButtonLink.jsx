@@ -12,14 +12,13 @@ const StyledLink = styled(Link)`
     text-align: center;
     background-color: ${props => props.active ? props.backgroundActive : props.backgroundColor};
     color: ${props => props.active ? props.colorActive : props.colorText};
-
     &:hover {
         background-color: ${props => props.active ? props.backgroundActiveHover : props.backgroundHover};
         color: ${props => props.active ? props.colorActiveHover : props.colorHover};
     }
 `;
 
-function ButtonLink({ active, to, children, backgroundColor, backgroundHover, colorHover, colorText, width, fontSize, colorActive, backgroundActive, backgroundActiveHover, colorActiveHover, className }) {
+function ButtonLink({ active, to, children, backgroundColor, backgroundHover, colorHover, colorText, width, fontSize, colorActive, backgroundActive, backgroundActiveHover, colorActiveHover, className, onClick}) {
     const linkProps = { 
         to: to, 
         backgroundColor, 
@@ -38,7 +37,7 @@ function ButtonLink({ active, to, children, backgroundColor, backgroundHover, co
 
     return (
         <StyledLink
-            {...linkProps}
+            {...linkProps} onClick={onClick}
         >
             {children}
         </StyledLink>

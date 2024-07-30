@@ -2,6 +2,8 @@
     font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     min-width: 90vw;
     padding: 3rem;
+    position: relative;
+    z-index: -1;
 }
 
 .we {
