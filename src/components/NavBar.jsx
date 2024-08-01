@@ -90,7 +90,7 @@ function NavBar({ active, position }) {
                                 <ButtonLink active={pathname === '/portfolio'} onClick={showNavbar} to="/portfolio" className='navbar-link'>Portfolio</ButtonLink>
                             </li>
                         </div>
-                        <Link to="/contacto" className='contact-btn'>Contáctenos</Link>
+                        <Link to="/contacto" className='contact-btn' onClick={showNavbar}>Contáctenos</Link>
                     </ul>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}> <FaTimes /> </button>
                 </div>
