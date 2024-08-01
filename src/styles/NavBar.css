@@ -11,7 +11,7 @@ header {
 }
 
 header img {
-    width: 200px;
+    width: 20vw;
 }
 
 header nav ul {
@@ -29,7 +29,7 @@ header nav img {
 
 header nav ul div {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5vw;
     margin-right: 2rem;
 }
 
@@ -42,6 +42,7 @@ header nav ul li .navbar-link{
     color: white;
     transform: scale(1);
     transition: all 400ms ease-in;
+    font-size: 1.3vw;
 }
 
 header nav ul li .navbar-link:hover{
@@ -59,7 +60,7 @@ header nav ul .contact-btn {
     border: none;
     border-radius: 10px;
     transition: 400ms ease-in;
-    font-size: 1.3rem;
+    font-size: 1.4vw;
     text-decoration: none;
     color: var(--clr-neutral-900);
 }
@@ -129,7 +130,7 @@ header.navbar a img.integra-img {
     justify-content: center;
     align-items: flex-start;
     visibility: hidden;
-    width: 13vw;
+    width: 14vw;
     opacity: 0;
     position: absolute;
     padding: 1vw;
@@ -139,7 +140,7 @@ header.navbar a img.integra-img {
     text-align: center;
     z-index: 20;
     transition: all 600ms ease-in;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     gap: .5vw;
     border-top: .5vw solid var(--mainColorLight);
 }
@@ -178,10 +179,16 @@ header.active .servicios-popup a:hover {
 
 @media only screen and (max-width: 1200px) {
     .servicios-popup {
-        width: 15vw;
+        width: 17vw;
     }
     .servicios-popup a {
         font-size: 1.4vw;
+    }
+    header nav ul li .navbar-link{
+        font-size: 1.7vw;
+    }
+    header nav ul .contact-btn {
+        font-size: 1.7vw;
     }
 }
 
@@ -217,6 +224,14 @@ header.active .servicios-popup a:hover {
         background-color: var(--mainColor);
         z-index: 10;
     }
+
+    header.navbar a img.integra-img-first {
+        width: 40vw;
+    }
+
+    header.navbar a img.integra-img {
+        width: 70vw;
+    }    
 
     header.active nav {
         background-color: white;
@@ -263,26 +278,71 @@ header.active .servicios-popup a:hover {
         visibility: hidden;
         opacity: 0;
     }
-    header.active .plus-sign {
-        color: var(--mainColor);
+
+    header nav ul li .navbar-link{
+        font-size: 4.5vw;
+    }
+    header nav ul .contact-btn {
+        font-size: 4.5vw;
     }
 }
 
-@media screen and (orientation: landscape) {
-    header nav a {
-        font-size: 1.1rem;
+@media screen and (max-width: 400px) {
+    header.navbar a img.integra-img-first {
+        width: 50vw;
     }
-    header nav ul li {
-        gap: 0.5rem;
+}
+
+@media screen and (max-width: 310px) {
+    header.navbar a img.integra-img {
+        width: 90vw;
+    }    
+    header nav ul li .navbar-link{
+        font-size: 7vw;
     }
+    header nav ul .contact-btn {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
     header nav div ul div {
+        display: flex;
+        gap: .2vw;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    header nav img {
-        width: 150px;
+    header nav ul li .navbar-link{
+        font-size: 2.5vw;
+    }
+    header nav ul .contact-btn {
+        font-size: 2.5vw;
+    }
+    header.navbar a img.integra-img {
+        width: 40vw;
+    } 
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    header nav ul li .navbar-link{
+        font-size: 2.8vw;
+    }
+    header nav ul .contact-btn {
+        font-size: 2.8vw;
+    }
+    header nav ul li {
+        gap: 0.6vw;
     }
     header nav ul button {
-        font-size: 1.1rem;
+        font-size: 1.2vw;
+    }
+}
+
+@media only screen and (max-width: 500px) and (orientation: landscape) {
+    header nav ul li .navbar-link{
+        font-size: 4vw;
+    }
+    header nav ul .contact-btn {
+        font-size: 4vw;
     }
 }

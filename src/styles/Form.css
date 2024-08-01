@@ -72,6 +72,18 @@
     height: 10vw;
 }
 
+.error {
+    color: var(--redColor);
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.form-submitted {
+    font-size: 1.3vw;
+    font-weight: 800;
+    color: var(--darkBlueColor);
+}
+
 .form-container input[type="submit"] {
     background-color: var(--darkBlueColor);
     color: var(--clr-neutral-100);
@@ -116,6 +128,15 @@
         font-size: 3vw;
         width: 40vw;
     }
+
+    .error {
+        font-size: 2.5vw;
+    }
+    .form-submitted {
+        font-size: 2.5vw;
+        font-weight: 800;
+        color: var(--darkBlueColor);
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -151,5 +172,14 @@
     .form-container input[type="submit"] {
         padding: 3vw 6vw;
         font-size: 4vw;
+    }
+
+    .error {
+        font-size: 3.5vw;
+    }
+    .form-submitted {
+        font-size: 3.5vw;
+        font-weight: 800;
+        color: var(--darkBlueColor);
     }
 }

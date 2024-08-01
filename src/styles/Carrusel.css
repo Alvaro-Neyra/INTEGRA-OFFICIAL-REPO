@@ -22,6 +22,7 @@
     pointer-events: none;
     transform: scaleX(100vw);
     transition: 1s ease-in-out;
+    justify-content: flex-start;
 }
 
 .carousel_card-active {
@@ -60,15 +61,15 @@
 }
 
 .button-lists {
-    margin-left: 25px;
     position: absolute;
     top: 70%;
-    left: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+    width: 100%;
+    padding: 10px 90px;
 }
 
 .button-lists .carousel-btn {
@@ -168,8 +169,74 @@
     }
     .button-lists {
         margin-left: 0;
-        left: 50%;
         transform: translate(-50%, -50%);
         top: 80%;
+        left: 50%;
+        justify-content: center;
+        padding: 2vw;
+    }
+    .button-lists .carousel-btn {
+        padding: 1vw 3.5vw;
+        margin-right: 10px;
+        color: white;
+        font-size: 1.5rem;
+        transition: 0.5s ease-in-out;
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .card-title {
+        font-size: 8vw;
+    }
+    .card-text {
+        font-size: 4vw;
+    }
+    .button-lists {
+        top: 85%;
+    }
+    .button-lists .carousel-btn {
+        padding: 2vw 4vw;
+        font-size: 4vw;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .button-lists {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: landscape) {
+    .card-title {
+        font-size: 5vw;
+    }
+    .card-text {
+        font-size: 3vw;
+    }
+    .button-lists {
+        top: 80%;
+        width: 100%;
+    }
+    .button-lists .carousel-btn {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    .card-title {
+        font-size: 4vw;
+    }
+    .card-text {
+        font-size: 2.5vw;
+    }
+    .button-lists {
+        top: 80%;
+        width: 100%;
+    }
+    .button-lists .carousel-btn {
+        font-size: 2vw;
+    }
+}
+
