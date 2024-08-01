@@ -155,6 +155,7 @@
     .card_overlay {
         align-items: center;
         text-align: center;
+        padding: 10vw;
     }
     .card-title {
         margin-left: 0;

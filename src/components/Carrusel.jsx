@@ -43,7 +43,7 @@ function Carrusel ({ images }){
                         </article>
                         <section className="button-lists">
                             <Link to="/project" className="carousel-btn">Ver Proyecto</Link>
-                            <Link to="/contacts" className="carousel-btn">Contáctenos</Link>
+                            <Link to="/contacto" className="carousel-btn">Contáctenos</Link>
                         </section>
                     </div>
                 })}
