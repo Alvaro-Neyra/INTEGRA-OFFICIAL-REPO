@@ -117,6 +117,12 @@
     padding-bottom: 7px;
     cursor: pointer;
     color: white;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel_arrow_left:focus, .carousel_arrow_right:focus {
+    outline: none;
 }
 
 .carousel_arrow_left {
@@ -141,6 +147,12 @@
     display: inline-block;
     margin-left: 10px;
     cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.pagination_dot:focus {
+    outline: none;
 }
 
 .pagination_dot:hover {
@@ -241,3 +253,9 @@
     }
 }
 
+
+@media only screen and (max-height: 500px) {
+    .carousel {
+        height: 800px;
+    }
+}

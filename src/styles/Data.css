@@ -37,8 +37,10 @@
     background-repeat: no-repeat;
     text-align: center;
 }
-.service-container:hover {
-    transform: scale(105%);
+@media (hover) {
+    .service-container:hover {
+        transform: scale(105%);
+    }
 }
 .service-icon {
     font-size: 1.5rem;
@@ -63,7 +65,6 @@
     justify-content: center;
     gap: 1rem;
     cursor: pointer;
-    align-items: center;
     font-weight: bold;
     transition: 0.5s ease-in-out;
     text-decoration: none;
@@ -79,6 +80,20 @@
         grid-template-columns: 1fr;
     }
     .services-section {
-        padding: 1rem;
+        padding: 5vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .service-container {
+        padding: 5vw;
+    }
+    .service-title {
+        font-size: 6vw;
+    }
+    .service-description {
+        font-size: 1rem;
+    }
+    .service-mas-informacion {
+        font-size: 1rem;
     }
 }

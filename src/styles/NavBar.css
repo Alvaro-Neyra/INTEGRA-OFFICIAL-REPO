@@ -194,9 +194,11 @@ header.active .servicios-popup a:hover {
 
 @media only screen and (max-width: 1024px) {
     header .nav-btn {
-        display: block;
+        display: flex;
         visibility: visible;
         opacity: 1;
+        justify-content: center;
+        align-items: center;
     }
     header .nav-btn svg {
         fill: var(--textColor);
@@ -226,7 +228,7 @@ header.active .servicios-popup a:hover {
     }
 
     header.navbar a img.integra-img-first {
-        width: 40vw;
+        width: 50vw;
     }
 
     header.navbar a img.integra-img {
@@ -306,6 +308,12 @@ header.active .servicios-popup a:hover {
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    header {
+        padding: 0.5rem;
+    }
+    .integra-img-first {
+        width: 100vw;
+    }
     header nav div ul div {
         display: flex;
         gap: .2vw;
@@ -318,12 +326,21 @@ header.active .servicios-popup a:hover {
     header nav ul .contact-btn {
         font-size: 2.5vw;
     }
-    header.navbar a img.integra-img {
+    header.navbar a img.integra-img-first {
         width: 40vw;
-    } 
+    }
+    header .nav-btn {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
+    header {
+        padding: 0.2rem;
+    }
+    .integra-img-first {
+        width: 35vw;
+    }
     header nav ul li .navbar-link{
         font-size: 2.8vw;
     }
@@ -335,6 +352,9 @@ header.active .servicios-popup a:hover {
     }
     header nav ul button {
         font-size: 1.2vw;
+    }
+    header .nav-btn {
+        font-size: 5vw;
     }
 }
 

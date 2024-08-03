@@ -53,11 +53,11 @@ function NavBar({ active, position }) {
     return (
         <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
             <Link to="/">
-                <img src={integraLogo} alt="integra-logo" className='integra-img-first' />
+                <img loading="lazy" src={integraLogo} alt="integra-logo" className='integra-img-first' />
             </Link>
             <nav ref={navRef}>
                 <Link to="/">
-                    <img src={integraLogo} alt="integra-logo" className='integra-img' />
+                    <img loading="lazy" src={integraLogo} alt="integra-logo" className='integra-img' />
                 </Link>
                 <div>
                     <ul>

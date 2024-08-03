@@ -151,6 +151,12 @@
     color: var(--mainColor);
     display: none;
     z-index: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-button-prev:focus, .swiper-button-next:focus {
+    outline: none;
 }
 
 .swiper-button-prev {
