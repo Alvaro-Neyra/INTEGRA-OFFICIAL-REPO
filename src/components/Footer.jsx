@@ -13,7 +13,7 @@ function Footer() {
                 <div className="footer-row-section">
                     <section className="details">
                         <div className="details-main">
-                            <Link to="/"><img src={integraLogoBlanco} alt="integra-logo" className="details-img" /></Link>
+                            <Link to="/"><img src={integraLogoBlanco} alt="integra-logo" className="details-img" loading="lazy"/></Link>
                             <p className="details-p">Desarrollamos estrategias a la medida de sus proyectos.</p>
                         </div>
                         <ul className="social-medias">

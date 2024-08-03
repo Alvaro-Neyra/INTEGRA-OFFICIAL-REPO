@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './views/Home';
 import Nosotros from './views/Nosotros';
 import Servicios from './views/Servicios';
@@ -15,7 +15,7 @@ import Contacts from './views/Contacts';
 
 function App() {
 
-  const browserRouter = createBrowserRouter([
+  const hashRouter = createHashRouter([
     { path: '/', element: <Home /> },
     { path: '/nosotros', element: <Nosotros /> },
     { path: '/servicios', element: <Servicios /> },
@@ -31,7 +31,7 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={browserRouter}>
+    <RouterProvider router={hashRouter}>
     </RouterProvider>
   );
 }

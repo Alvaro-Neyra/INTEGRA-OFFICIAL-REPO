@@ -35,7 +35,7 @@ function InfiniteScroller({ heading, content, duration, direction }) {
                         {
                             content.map((item, index) => {
                                 return (
-                                    <img src={item.img} alt={item.descripcion} key={item.id ? item.id : index} />
+                                    <img src={item.img} alt={item.descripcion} key={item.id ? item.id : index}/>
                                 )
                             })
                         }

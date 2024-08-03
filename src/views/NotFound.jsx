@@ -22,12 +22,12 @@ function NotFound() {
                                 <Link to="/servicios" className="blue-btn">SERVICIOS</Link>
                                 <Link to="/contacto" className="yellow-btn">CONTACTO</Link>
                             </div>
-                            <img src={arrowNotFound} alt="flecha" className="arrow-notfound" />
+                            <img src={arrowNotFound} alt="flecha" className="arrow-notfound" loading="lazy"/>
                         </div>
                     </div>
                     <div className="design"></div>
                     <div className="design-circle"></div>
-                    <img src={errorImage} alt="errorImage" className="notfound-img" />
+                    <img src={errorImage} alt="errorImage" className="notfound-img" loading="lazy"/>
                 </section>
             </main>
         </>

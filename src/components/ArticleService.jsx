@@ -16,7 +16,7 @@ function ArticleService({heading, img, paragraphs}) {
     return (
         <StyledArticleService>
             <h2>{heading}</h2>
-            <img src={img} alt={"imagen de " + heading} />
+            <img src={img} alt={"imagen de " + heading} loading='lazy'/>
             {paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
         </StyledArticleService>
     );

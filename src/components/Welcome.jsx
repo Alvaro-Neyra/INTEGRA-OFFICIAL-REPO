@@ -17,8 +17,8 @@ function Welcome() {
                 <div className="we-image">
                     {/*AQUI VA LA IMAGEN SVG ANIMADA*/}
                     <div className="blob-container">
-                        <img src={rayLightImage} alt="light-ray1" className="light-ray" aria-hidden="true" />
-                        <img src={rayLightImage} alt="light-ray2" className="light-ray" aria-hidden="true" />
+                        <img src={rayLightImage} alt="light-ray1" className="light-ray" aria-hidden="true" loading="lazy"/>
+                        <img src={rayLightImage} alt="light-ray2" className="light-ray" aria-hidden="true" loading="lazy"/>
                         <div className="image-container"></div>
                         <Blob />
                         <Blob />

@@ -8,8 +8,8 @@ function Values() {
     return(
         <>
             <section className="values-container">
-                <img src={pinkArrow} alt="pink-arrow" className="pink-arrow" />
-                <img src={yellowStar} alt="yellow-star" className="yellow-star" />
+                <img src={pinkArrow} alt="pink-arrow" className="pink-arrow" loading="lazy"/>
+                <img src={yellowStar} alt="yellow-star" className="yellow-star" loading="lazy"/>
                 <h2 className='heading-2'>Valores</h2>
                 <p>NUESTROS VALORES ESTÁN EN CONSTANTE CONTRUCCIÓN HACIA LA PERFECCIÓN</p>
                 <div className="values">

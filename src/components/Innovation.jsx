@@ -11,11 +11,11 @@ function Innovation() {
         <>
             <section className="innovation-section">
                 <div className="images-container">
-                    <img className="blue-arrow" src={blueArrow} alt="blue-arrow" />
-                    <img className="image1" src={image1} alt="image1-innovacion" />
-                    <img className="image2" src={image2} alt="image2-innovacion" />
-                    <img className="image3" src={image3} alt="image3-innovacion" />
-                    <img className="image4" src={image4} alt="image4-innovacion" />
+                    <img className="blue-arrow" src={blueArrow} alt="blue-arrow" loading="lazy"/>
+                    <img className="image1" src={image1} alt="image1-innovacion" loading="lazy"/>
+                    <img className="image2" src={image2} alt="image2-innovacion" loading="lazy"/>
+                    <img className="image3" src={image3} alt="image3-innovacion" loading="lazy"/>
+                    <img className="image4" src={image4} alt="image4-innovacion" loading="lazy"/>
                 </div>
                 <div className="innovation-text-container">
                     <h2>Innovación</h2>

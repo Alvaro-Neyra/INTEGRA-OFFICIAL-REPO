@@ -72,7 +72,7 @@ function ImageAndTextService({backgroundColor, widthDiv, widthImg, paddingDiv, t
                 <h2>{heading}</h2>
                 <p>{text}</p>
             </div>
-            <img src={img} alt={"image of " + heading} />
+            <img src={img} alt={"image of " + heading} loading='lazy'/>
         </StyledImageAndText>
     );
 }
