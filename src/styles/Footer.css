@@ -173,6 +173,9 @@
     .title-list {
         justify-content: center;
     }
+    .details .details-p {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -184,5 +187,51 @@
     }
     .contacts-footer ul {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-footer nav {
+        gap: 5vw;
+    }
+    .copyright {
+        padding: 1.1vw;
+        font-size: 1.2vw;
+    }
+    .title-list {
+        gap: 1.1vw;
+        padding: 0.3vw 0;
+        font-size: 1vw;
+    }
+    .menu-footer p, .services-footer p, .contacts-footer p  {
+        margin-left: 2vw;
+    }
+    .nav-footer ul li p{
+        font-size: 1.2vw;
+    }
+    .nav-footer ul li a{
+        font-size: 1.2vw;
+    }
+    .nav-footer h2 {
+        padding: 1.5vw 0;
+    }
+    .details .social-medias {
+        gap: 1.5vw;
+        font-size: 2.5vw;
+    }
+    .details .details-main {
+        padding: 3vw 0;
+        gap: 2vw;
+        font-size: 1.2vw;
+    }
+    .details {
+        padding: 2.5vw;
+    }
+    .details-img {
+        width: 10vw;
+    }
+    .footer-row-section {
+        gap: 2vw;
+        padding: 2vw;
     }
 }

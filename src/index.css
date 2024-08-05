@@ -73,7 +73,7 @@ img {
 }
 
 .heading-2 {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   text-align: center;
   color: var(--mainColor);
   margin-bottom: 2rem;
@@ -153,6 +153,9 @@ svg {
 }
 
 @media screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 3rem;
+  }
   .gototop-btn {
     font-size: 3vw;
     padding: 1vw 1.5vw;
@@ -178,5 +181,11 @@ svg {
     height: 12vw;
     font-size: 5vw;
     padding: 2vw 2.2vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  :root {
+    --gap-scroller-inner: 5vw;
   }
 }

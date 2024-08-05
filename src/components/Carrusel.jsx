@@ -36,7 +36,26 @@ function Carrusel ({ images }){
                     return <div key={index} className={
                         index === current ? "carousel_card carousel_card-active" : "carousel_card"
                     }>
-                        <img className="card-image" src={image.img} alt={image.title} loading="lazy"/>
+                        <picture>
+
+                            <source srcSet={image.img.webp.xsmall} media="(max-width: 320px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.small} media="(max-width: 480px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.medium} media="(max-width: 768px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.large} media="(max-width: 1024px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.xlarge} media="(max-width: 1200px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.xxlarge} media="(max-width: 1600px)" type="image/webp"/>
+                            <source srcSet={image.img.webp.original} type="image/webp"/>
+
+                            <source srcSet={image.img.jpg.xsmall} media="(max-width: 320px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.small} media="(max-width: 480px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.medium} media="(max-width: 768px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.large} media="(max-width: 1024px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.xlarge} media="(max-width: 1200px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.xxlarge} media="(max-width: 1600px)" type="image/jpeg"/>
+                            <source srcSet={image.img.jpg.original} type="image/jpeg"/>
+
+                            <img src={image.img.jpg.original} alt={image.title} className="carousel_img"/>
+                        </picture>
                         <article className="card_overlay">
                             <h2 className="card-title">{image.title}</h2>
                             <p className="card-text">{image.text}</p>

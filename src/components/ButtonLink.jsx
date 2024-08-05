@@ -5,8 +5,8 @@ const StyledLink = styled(Link)`
     font-size: ${props => props.fontSize};
     font-weight: ${props => props.active ? 'bold' : 'normal'};
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
     transition: all 0.5s ease-in-out;
     width: ${props => props.width};
     text-align: center;

@@ -1,11 +1,11 @@
 header {
-    padding: 1rem;
+    padding: 1.1vw;
     display: flex;
     width: 100vw;
     align-items: center;
     justify-content: space-around;
     background-color: transparent;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     position: fixed;
     z-index: 20;
 }
@@ -17,7 +17,7 @@ header img {
 header nav ul {
     display: flex;
     list-style-type: none;
-    gap: 1.5rem;
+    gap: 1.5vw;
     align-items: center;
     justify-content: space-between;
     height: 100%;
@@ -30,7 +30,7 @@ header nav img {
 header nav ul div {
     display: flex;
     gap: 1.5vw;
-    margin-right: 2rem;
+    margin-right: 2vw;
 }
 
 header nav ul li {
@@ -209,7 +209,7 @@ header.active .servicios-popup a:hover {
     header {
         display: flex;
         gap: 1.5rem;
-        padding: 2rem 2rem;
+        padding: 1rem;
     }
     header nav {
         display: flex;
@@ -229,11 +229,7 @@ header.active .servicios-popup a:hover {
 
     header.navbar a img.integra-img-first {
         width: 50vw;
-    }
-
-    header.navbar a img.integra-img {
-        width: 70vw;
-    }    
+    }  
 
     header.active nav {
         background-color: white;
@@ -335,9 +331,6 @@ header.active .servicios-popup a:hover {
 }
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
-    header {
-        padding: 0.2rem;
-    }
     .integra-img-first {
         width: 35vw;
     }
@@ -364,5 +357,12 @@ header.active .servicios-popup a:hover {
     }
     header nav ul .contact-btn {
         font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    header nav ul .contact-btn {
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
     }
 }

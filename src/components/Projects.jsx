@@ -25,13 +25,27 @@ function CardSlider() {
                             },
                             968: {
                                 slidesPerView: 3,
+                            },
+                            1600: {
+                                slidesPerView: 4,
                             }
                         }
                         }
                     >
                         {projects.map((project, index) => {
                             return (
-                                <SwiperSlide className="card" key={project.id} style={{backgroundImage: `url(${project.img})`}}>
+                                <SwiperSlide className="card" key={project.id}>
+                                    <picture>
+                                        <source srcSet={project.img.webp.small} type="image/webp" media="(max-width: 320px)"/>
+                                        <source srcSet={project.img.webp.medium} type="image/webp" media="(max-width: 480px)"/>
+                                        <source srcSet={project.img.webp.large} type="image/webp" media="(max-width: 500px)"/>
+
+                                        <source srcSet={project.img.jpg.small} type="image/jpeg" media="(max-width: 320px)"/>
+                                        <source srcSet={project.img.jpg.medium} type="image/jpeg" media="(max-width: 480px)"/>
+                                        <source srcSet={project.img.jpg.large} type="image/jpeg" media="(max-width: 500px)"/>
+
+                                        <img src={project.img.jpg.large} alt={project.name} className="card__image"/>
+                                    </picture>
                                     <div className="card-content">
                                         <h3 className="card__title">{project.name}</h3>
                                         <p className="card__body">{project.description}</p>
