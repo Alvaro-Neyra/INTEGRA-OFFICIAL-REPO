@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import ButtonLink from './ButtonLink';
-import integraLogo from '../images/integra-logo-color.svg';
+import integraLogo from '../../public/svg/integra-logo-color.svg';
 import "../styles/NavBar.css"
 
 function NavBar({ active, position }) {

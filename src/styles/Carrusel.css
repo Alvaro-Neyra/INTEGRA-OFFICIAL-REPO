@@ -31,7 +31,7 @@
     pointer-events: visible;
 }
 
-.card-image {
+.carousel_img {
     width: 100%;
     object-fit: cover;
 }

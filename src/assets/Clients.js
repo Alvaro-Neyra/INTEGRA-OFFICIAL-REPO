@@ -1,35 +1,35 @@
 const clientesArreglo = [
     {
         descripcion: "CAT LOGO",
-        img: "catLogo.svg"
+        img: "svg/catLogo.svg"
     },
     {
         descripcion: "3M LOGO",
-        img: "3m.svg"
+        img: "svg/3m.svg"
     },
     {
         descripcion: "PASTIFICIO LOGO",
-        img: "logoPastificio.svg"
+        img: "svg/logoPastificio.svg"
     },
     {
         descripcion: "FORBES LOGO",
-        img: "forbes.svg"
+        img: "svg/forbes.svg"
     },
     {
         descripcion: "OXXO LOGO",
-        img: "oxxoLogo.svg"
+        img: "svg/oxxoLogo.svg"
     },
     {
         descripcion: "BCP LOGO",
-        img: "bcp-4.svg"
+        img: "svg/bcp-4.svg"
     },
     {
         descripcion: "MACYS LOGO",
-        img: "macys.svg"
+        img: "svg/macys.svg"
     },
     {
         descripcion: "BUZZFEED LOGO",
-        img: "buzzfeed.svg"
+        img: "svg/buzzfeed.svg"
     }
 ];
 

@@ -1,4 +1,3 @@
-import rayLightImage from "../images/rayos-de-luz.png";
 import Blob from "./Blob";
 import "../styles/Welcome.css";
 
@@ -17,9 +16,25 @@ function Welcome() {
                 <div className="we-image">
                     {/*AQUI VA LA IMAGEN SVG ANIMADA*/}
                     <div className="blob-container">
-                        <img src={rayLightImage} alt="light-ray1" className="light-ray" aria-hidden="true" loading="lazy"/>
-                        <img src={rayLightImage} alt="light-ray2" className="light-ray" aria-hidden="true" loading="lazy"/>
-                        <div className="image-container"></div>
+                        <img src="svg/rayos-de-luz.svg" alt="light-ray1" className="light-ray" aria-hidden="true" loading="lazy"/>
+                        <img src="svg/rayos-de-luz.svg" alt="light-ray2" className="light-ray" aria-hidden="true" loading="lazy"/>
+                        <div className="image-container">
+                            <picture>
+                                <source srcSet="images/nosotros-image/webp/nosotros-image-320px.webp" media="(max-width: 320px)" type="image/webp"/>
+                                <source srcSet="images/nosotros-image/webp/nosotros-image-480px.webp" media="(max-width: 480px)" type="image/webp"/>
+                                <source srcSet="images/nosotros-image/webp/nosotros-image-768px.webp" media="(max-width: 768px)" type="image/webp"/>
+                                <source srcSet="images/nosotros-image/webp/nosotros-image-1024px.webp" media="(max-width: 1024px)" type="image/webp"/>
+                                <source srcSet="images/nosotros-image/webp/nosotros-image.webp" type="image/webp"/>
+
+                                <source srcSet="images/nosotros-image/jpg/nosotros-image-320px.jpg" media="(max-width: 320px)" type="image/jpeg"/>
+                                <source srcSet="images/nosotros-image/jpg/nosotros-image-480px.jpg" media="(max-width: 480px)" type="image/jpeg"/>
+                                <source srcSet="images/nosotros-image/jpg/nosotros-image-768px.jpg" media="(max-width: 768px)" type="image/jpeg"/>
+                                <source srcSet="images/nosotros-image/jpg/nosotros-image-1024px.jpg" media="(max-width: 1024px)" type="image/jpeg"/>
+                                <source srcSet="images/nosotros-image/jpg/nosotros-image.jpg" type="image/jpeg"/>
+
+                                <img src="images/nosotros-image/jpg/nosotros-image.jpg" alt="Nosotros" loading="lazy"/>
+                            </picture>
+                        </div>
                         <Blob />
                         <Blob />
                     </div>

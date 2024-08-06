@@ -1,7 +1,7 @@
 import TextCard from './TextCard';
 import valores from '../assets/Valores';
-import pinkArrow from '../images/pink-arrow.webp';
-import yellowStar from "../images/star.webp";
+import pinkArrow from '../../public/svg/pink-arrow.svg';
+import yellowStar from "../../public/svg/star.svg";
 import "../styles/Values.css";
 
 function Values() {

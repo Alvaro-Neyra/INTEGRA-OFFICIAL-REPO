@@ -9,11 +9,13 @@
                     small: "images/servicios-images/jpg/construccion-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/construccion-servicios-480px.jpg",
                     large: "images/servicios-images/jpg/construccion-servicios-600px.jpg",
+                    original: "images/servicios-images/jpg/construccion-servicios-original.jpg"
                 },
                 webp: {
                     small: "images/servicios-images/webp/construccion-servicios-320px.webp",
                     medium: "images/servicios-images/webp/construccion-servicios-480px.webp",
                     large: "images/servicios-images/webp/construccion-servicios-600px.webp",
+                    original: "images/servicios-images/webp/construccion-servicios-original.webp"
                 }
             },
             "route": "/servicios/construccion"
@@ -28,11 +30,15 @@
                     small: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-480px.jpg",
                     large: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-600px.jpg",
+                    xlarge: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-1024px.jpg",
+                    original: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-original.jpg"
                 },
                 webp: {
                     small: "images/servicios-images/webp/gerencia-de-proyectos-servicios-320px.webp",
                     medium: "images/servicios-images/webp/gerencia-de-proyectos-servicios-480px.webp",
                     large: "images/servicios-images/webp/gerencia-de-proyectos-servicios-600px.webp",
+                    xlarge: "images/servicios-images/webp/gerencia-de-proyectos-servicios-1024px.webp",
+                    original: "images/servicios-images/webp/gerencia-de-proyectos-servicios-original.webp"
                 }
             },
             "route": "/servicios/gerencia-de-proyectos"
@@ -46,12 +52,15 @@
                 jpg: {
                     small: "images/servicios-images/jpg/inmobiliaria-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/inmobiliaria-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/inmobiliaria-servicios-600px.jpg"
+                    large: "images/servicios-images/jpg/inmobiliaria-servicios-600px.jpg",
+                    xlarge: "images/servicios-images/jpg/inmobiliaria-servicios-1024px.jpg",
+                    original: "images/servicios-images/jpg/inmobiliaria-servicios-original.jpg"
                 },
                 webp: {
                     small: "images/servicios-images/webp/inmobiliaria-servicios-320px.webp",
                     medium: "images/servicios-images/webp/inmobiliaria-servicios-480px.webp",
-                    large: "images/servicios-images/webp/inmobiliaria-servicios-600px.webp"
+                    large: "images/servicios-images/webp/inmobiliaria-servicios-600px.webp",
+                    original: "images/servicios-images/webp/inmobiliaria-servicios-original.webp"
                 }
             },
             "route": "/servicios/inmobiliaria"
@@ -65,12 +74,14 @@
                 jpg: {
                     small: "images/servicios-images/jpg/expediente-tecnico-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/expediente-tecnico-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/expediente-tecnico-servicios-600px.jpg"
+                    large: "images/servicios-images/jpg/expediente-tecnico-servicios-600px.jpg",
+                    original: "images/servicios-images/jpg/expediente-tecnico-servicios-original.jpg"
                 }, 
                 webp: {
                     small: "images/servicios-images/webp/expediente-tecnico-servicios-320px.webp",
                     medium: "images/servicios-images/webp/expediente-tecnico-servicios-480px.webp",
-                    large: "images/servicios-images/webp/expediente-tecnico-servicios-600px.webp"
+                    large: "images/servicios-images/webp/expediente-tecnico-servicios-600px.webp",
+                    original: "images/servicios-images/webp/expediente-tecnico-servicios-original.webp"
                 }
             },
             "route": "/servicios/expediente-tecnico"
@@ -84,12 +95,14 @@
                 jpg: {
                     small: "images/servicios-images/jpg/inspeccion-tecnica-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/inspeccion-tecnica-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/inspeccion-tecnica-servicios-600px.jpg"
+                    large: "images/servicios-images/jpg/inspeccion-tecnica-servicios-600px.jpg",
+                    original: "images/servicios-images/jpg/inspeccion-tecnica-servicios-original.jpg"
                 },
                 webp: {
                     small: "images/servicios-images/webp/inspeccion-tecnica-servicios-320px.webp",
                     medium: "images/servicios-images/webp/inspeccion-tecnica-servicios-480px.webp",
-                    large: "images/servicios-images/webp/inspeccion-tecnica-servicios-600px.webp"
+                    large: "images/servicios-images/webp/inspeccion-tecnica-servicios-600px.webp",
+                    original: "images/servicios-images/webp/inspeccion-tecnica-servicios-original.webp"
                 }
             },
             "route": "/servicios/inspeccion-tecnica"
@@ -103,12 +116,14 @@
                 jpg: {
                     small: "images/servicios-images/jpg/supervision-de-obra-servicios-320px.jpg",
                     medium: "images/servicios-images/jpg/supervision-de-obra-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/supervision-de-obra-servicios-600px.jpg"
+                    large: "images/servicios-images/jpg/supervision-de-obra-servicios-600px.jpg",
+                    original: "images/servicios-images/jpg/supervision-de-obra-servicios-original.jpg"
                 },
                 webp: {
                     small: "images/servicios-images/webp/supervision-de-obra-servicios-320px.webp",
                     medium: "images/servicios-images/webp/supervision-de-obra-servicios-480px.webp",
-                    large: "images/servicios-images/webp/supervision-de-obra-servicios-600px.webp"
+                    large: "images/servicios-images/webp/supervision-de-obra-servicios-600px.webp",
+                    original: "images/servicios-images/webp/supervision-de-obra-servicios-original.webp"
                 }
             },
             "route": "/servicios/supervision-de-obra"

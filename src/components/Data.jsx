@@ -14,12 +14,16 @@ function Data({ services }) {
                                 <source srcSet={service.image.webp.small} media="(max-width: 320px)" type="image/webp" />
                                 <source srcSet={service.image.webp.medium} media="(max-width: 480px)" type="image/webp" />
                                 <source srcSet={service.image.webp.large} media="(max-width: 600px)" type="image/webp" />
+                                <source srcSet={service.image.webp.xlarge} media="(max-width: 1024px)" type="image/webp" />
+                                <source srcSet={service.image.webp.original} type="image/webp" />
 
                                 <source srcSet={service.image.jpg.small} media="(max-width: 320px)" type="image/jpeg" />
                                 <source srcSet={service.image.jpg.medium} media="(max-width: 480px)" type="image/jpeg" />
                                 <source srcSet={service.image.jpg.large} media="(max-width: 600px)" type="image/jpeg" />
+                                <source srcSet={service.image.jpg.xlarge} media="(max-width: 1024px)" type="image/jpeg" />
+                                <source srcSet={service.image.jpg.original} type="image/jpeg" />
 
-                                <img src={service.image.jpg.large} alt={service.nombre} className="service-image" />
+                                <img src={service.image.jpg.original} alt={service.nombre} className="service-image" />
                             </picture>
                             <div className="service-overlay">
                                 <i className={service.icon + " service-icon"}></i>

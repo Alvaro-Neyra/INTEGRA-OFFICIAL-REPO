@@ -1,4 +1,4 @@
-import integraLogoBlanco from "../images/integra-logo-blanco.png";
+import integraLogoBlanco from "../../public/svg/integra-logo-blanco.svg";
 import { Link, useLocation } from "react-router-dom";
 import ButtonLink from "./ButtonLink";
 import "../styles/Footer.css";

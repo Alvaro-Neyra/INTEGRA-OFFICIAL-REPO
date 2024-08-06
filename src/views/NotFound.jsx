@@ -1,5 +1,5 @@
-import errorImage from "../images/404.svg";
-import arrowNotFound from "../images/flecha-notfound.png";
+import errorImage from "../../public/svg/404.svg";
+import arrowNotFound from "../../public/svg/flecha-notfound.svg";
 import { Link } from "react-router-dom";
 import "../styles/NotFound.css";
 

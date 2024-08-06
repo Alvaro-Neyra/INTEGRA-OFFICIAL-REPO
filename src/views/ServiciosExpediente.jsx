@@ -9,6 +9,21 @@ import "../styles/Servicios.css";
 import ResponsiveAsideDiv from "../components/ResponsiveAsideDiv";
 import AbsoluteElements from "../components/AbsoluteElements";
 
+const expedienteImages = {
+    webp: {
+        xsmall: "images/servicios-images/webp/expediente-tecnico-servicios-320px.webp",
+        small: "images/servicios-images/webp/expediente-tecnico-servicios-480px.webp",
+        medium: "images/servicios-images/webp/expediente-tecnico-servicios-600px.webp",
+        original: "images/servicios-images/webp/expediente-tecnico-servicios-original.webp"
+    },
+    jpg: {
+        xsmall: "images/servicios-images/jpg/expediente-tecnico-servicios-320px.jpg",
+        small: "images/servicios-images/jpg/expediente-tecnico-servicios-480px.jpg",
+        medium: "images/servicios-images/jpg/expediente-tecnico-servicios-600px.jpg",
+        original: "images/servicios-images/jpg/expediente-tecnico-servicios-original.jpg"
+    }
+}
+
 function ServiciosExpediente() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -24,7 +39,7 @@ function ServiciosExpediente() {
                 <main className="servicios-main">
                     <NavBarAside></NavBarAside>
                     <section>
-                        <ImagenAndTextService heading={"EXPEDIENTE TÉCNICO"} text={"Nuestro servicio de expediente técnico ofrece una solución completa para la gestión y documentación de proyectos. Nos encargamos de la elaboración de informes técnicos detallados que cumplen con los requisitos normativos y técnicos necesarios para la correcta ejecución de los proyectos. Aseguramos que todos los aspectos del proyecto estén debidamente documentados y respaldados para garantizar la transparencia y el cumplimiento de los estándares de calidad."} img={"https://faro51.com/wp-content/uploads/2018/09/servicio-Bim-faro51.jpg"} backgroundColor={"hsl(0, 0%, 95%)"} widthImg={"40vw"} widthDiv={"30vw"} paddingDiv={"3vw"} textColor={"#012E40"} borderColor={"#012E40"}></ImagenAndTextService>
+                        <ImagenAndTextService heading={"EXPEDIENTE TÉCNICO"} text={"Nuestro servicio de expediente técnico ofrece una solución completa para la gestión y documentación de proyectos. Nos encargamos de la elaboración de informes técnicos detallados que cumplen con los requisitos normativos y técnicos necesarios para la correcta ejecución de los proyectos. Aseguramos que todos los aspectos del proyecto estén debidamente documentados y respaldados para garantizar la transparencia y el cumplimiento de los estándares de calidad."} img={expedienteImages} backgroundColor={"hsl(0, 0%, 95%)"} widthImg={"40vw"} widthDiv={"30vw"} paddingDiv={"3vw"} textColor={"#012E40"} borderColor={"#012E40"}></ImagenAndTextService>
                         <article className="servicios-content">
                             <p>FARO 51 ofrece el servicio de desarrollo de expediente técnico en el cual implementa la metodología BIM logrando mejores resultados en todas las etapas del proyecto.</p>
                             <p>Es muy poderosa la ventaja que brinda contar con un modelamiento 3D en los proyectos ya que a través del mismo se puede evaluar la viabilidad del proyecto, realizar las estimaciones de costos con mayor precisión, realizar la planificación de la ejecución con menor incertidumbre, hacer seguimiento al plan de calidad, compatibilizar planos de todas las especialidades reduciendo el número de consultas en la ejecución y logrando ahorros.</p>

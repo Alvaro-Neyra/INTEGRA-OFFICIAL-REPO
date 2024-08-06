@@ -17,7 +17,39 @@ const paragraphs = [
     "Aunque nuestra propuesta de servicio se realiza desde la concepción del proyecto hasta la entrega, también es flexible para incorporarse en cualquier etapa de la siguiente manera:"
 ];
 
+const construccionImages = {
+    webp: {
+        xsmall: "images/servicios-images/webp/construccion-servicios-320px.webp",
+        small: "images/servicios-images/webp/construccion-servicios-480px.webp",
+        medium: "images/servicios-images/webp/construccion-servicios-600px.webp",
+        original: "images/servicios-images/webp/construccion-servicios-original.webp"
+    },
+    jpg: {
+        xsmall: "images/servicios-images/jpg/construccion-servicios-320px.jpg",
+        small: "images/servicios-images/jpg/construccion-servicios-480px.jpg",
+        medium: "images/servicios-images/jpg/construccion-servicios-600px.jpg",
+        original: "images/servicios-images/jpg/construccion-servicios-original.jpg"
+    }
+}
 
+const construccionArticleImages = {
+    webp: {
+        xsmall: "images/article-images/construction-service-image/webp/construccion-articulo-320px.webp",
+        small: "images/article-images/construction-service-image/webp/construccion-articulo-480px.webp",
+        medium: "images/article-images/construction-service-image/webp/construccion-articulo-600px.webp",
+        large: "images/article-images/construction-service-image/webp/construccion-articulo-1024px.webp",
+        xlarge: "images/article-images/construction-service-image/webp/construccion-articulo-1200px.webp",
+        original: "images/article-images/construction-service-image/webp/construccion-articulo-original.webp"
+    },
+    jpg: {
+        xsmall: "images/article-images/construction-service-image/jpg/construccion-articulo-320px.jpg",
+        small: "images/article-images/construction-service-image/jpg/construccion-articulo-480px.jpg",
+        medium: "images/article-images/construction-service-image/jpg/construccion-articulo-600px.jpg",
+        large: "images/article-images/construction-service-image/jpg/construccion-articulo-1024px.jpg",
+        xlarge: "images/article-images/construction-service-image/jpg/construccion-articulo-1200px.jpg",
+        original: "images/article-images/construction-service-image/jpg/construccion-articulo-original.jpg"
+    }
+};
 
 function ServiciosConstruccion() {
     useEffect(() => {
@@ -34,7 +66,7 @@ function ServiciosConstruccion() {
                 <main className="servicios-main">
                     <NavBarAside></NavBarAside>
                     <section>
-                        <ImagenAndTextService heading={"CONSTRUCCIÓN"} text={"Construimos proyectos de construcción de alta calidad en todo el país. Nuestro equipo de expertos en construcción se encarga de cada detalle, desde el diseño inicial hasta la finalización del proyecto. Nos esforzamos por superar las expectativas de nuestros clientes y entregar proyectos a tiempo y dentro del presupuesto."} img={"https://faro51.com/wp-content/uploads/2018/07/servicio-construccion-faro51.jpg"} backgroundColor={"hsl(0, 0%, 95%)"} widthImg={"40vw"} widthDiv={"30vw"} paddingDiv={"3vw"} textColor={"#012E40"} borderColor={"#012E40"}></ImagenAndTextService>
+                        <ImagenAndTextService heading={"CONSTRUCCIÓN"} text={"Construimos proyectos de construcción de alta calidad en todo el país. Nuestro equipo de expertos en construcción se encarga de cada detalle, desde el diseño inicial hasta la finalización del proyecto. Nos esforzamos por superar las expectativas de nuestros clientes y entregar proyectos a tiempo y dentro del presupuesto."} img={construccionImages} backgroundColor={"hsl(0, 0%, 95%)"} widthImg={"40vw"} widthDiv={"30vw"} paddingDiv={"3vw"} textColor={"#012E40"} borderColor={"#012E40"}></ImagenAndTextService>
                         <article className="servicios-content">
                             <p>Uno de nuestros principales servicios es la construcción de obras de infraestructura en general. Empleamos procesos eficientes y contamos con profesionales altamente calificados para asegurar la calidad a lo largo de la vida de la obra.</p>
                             <p>Ofrecemos generar valor permanentemente en todas nuestras obras reduciendo los costos  y los tiempos de ejecución a través de metodologías constructivas como Lean Construction.</p>
@@ -50,7 +82,7 @@ function ServiciosConstruccion() {
                                 <li>Fabricas Industriales.</li>
                                 <li>Demoliciones.</li>
                             </ul>
-                            <ArticleService heading={"Implementación, Equipamiento y Remodelación."} img={"https://faro51.com/wp-content/uploads/2018/07/servicio-implementacion-faro51.jpg"} paragraphs={paragraphs}></ArticleService>
+                            <ArticleService heading={"Implementación, Equipamiento y Remodelación."} img={construccionArticleImages} paragraphs={paragraphs}></ArticleService>
                             <AccordionSet content={AccordionsConstruccion}></AccordionSet>
                         </article>
                     </section>
