@@ -34,7 +34,7 @@ button h2{
 }
 
 .service-list li {
-    background: url(../images/check-mark.svg) no-repeat left center;
+    background: url(../svg/check-mark.svg) no-repeat left center;
     background-size: 1.5vw 1.5vw;
     padding-left: 2.5vw;
     line-height: 2vw;
