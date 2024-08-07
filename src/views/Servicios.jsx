@@ -9,13 +9,11 @@ import AbsoluteElements from '../components/AbsoluteElements';
 
 const videoServicios = {
     webm: {
-        "480p": "videos/services/webm/services-480p.webm",
         "720p": "videos/services/webm/services-720p.webm",
         "1080p": "videos/services/webm/services-1080p.webm",
         "original": "videos/services/webm/services.webm"
     },
     mp4: {
-        "480p": "videos/services/mp4/services-480p.mp4",
         "720p": "videos/services/mp4/services-720p.mp4",
         "1080p": "videos/services/mp4/services-1080p.mp4",
         "original": "videos/services/mp4/services.mp4"

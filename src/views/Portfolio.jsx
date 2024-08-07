@@ -6,12 +6,10 @@ import { useEffect } from 'react';
 
 const videoPortfolio = {
     webm: {
-        "480p": "videos/portfolio/webm/portfolio-480p.webm",
         "720p": "videos/portfolio/webm/portfolio-720p.webm",
         "original": "videos/portfolio/webm/portfolio.webm"
     },
     mp4: {
-        "480p": "videos/portfolio/mp4/portfolio-480p.mp4",
         "720p": "videos/portfolio/mp4/portfolio-720p.mp4",
         "original": "videos/portfolio/mp4/portfolio.mp4"
     }
