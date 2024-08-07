@@ -204,7 +204,15 @@
         transition: 0.5s ease-in-out;
         text-decoration: none;
     }
-    
+    .carousel_arrow_left, .carousel_arrow_right {
+        font-size: 4vw;
+        width: 4vw;
+        height: 4vw;
+    }
+    .pagination_dot {
+        height: 1.5vw;
+        width: 1.5vw;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -220,6 +228,21 @@
     .button-lists .carousel-btn {
         padding: 2vw 4vw;
         font-size: 4vw;
+    }
+    .carousel_arrow_left, .carousel_arrow_right {
+        font-size: 4vw;
+        width: 4vw;
+        height: 4vw;
+    }
+    .carousel_arrow_left {
+        left: 4%;
+    }
+    .carousel_arrow_right {
+        right: 4%;
+    }
+    .pagination_dot {
+        height: 2vw;
+        width: 2vw;
     }
 }
 
