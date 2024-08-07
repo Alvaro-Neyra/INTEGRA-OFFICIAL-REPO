@@ -2,7 +2,6 @@ import { useRef, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import ButtonLink from './ButtonLink';
-import integraLogo from '../../public/svg/integra-logo-color.svg';
 import "../styles/NavBar.css"
 
 function NavBar({ active, position }) {
@@ -53,11 +52,11 @@ function NavBar({ active, position }) {
     return (
         <header className={navBar ? "navbar active" : "navbar"} style={headerStyle}>
             <Link to="/">
-                <img loading="lazy" src={integraLogo} alt="integra-logo" className='integra-img-first'/>
+                <img loading="lazy" src="svg/integra-logo-color.svg" alt="integra-logo" className='integra-img-first'/>
             </Link>
             <nav ref={navRef}>
                 <Link to="/">
-                    <img loading="lazy" src={integraLogo} alt="integra-logo" className='integra-img' />
+                    <img loading="lazy" src="svg/integra-logo-color.svg" alt="integra-logo" className='integra-img' />
                 </Link>
                 <div>
                     <ul>
