@@ -14,7 +14,7 @@ const projectosData = [
                 large: "images/projectos-images/webp/institucionales-proyectos-500px.webp"
             }
         },
-        "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines .."
+        "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines."
     },
     {
         "id": 2,
@@ -116,7 +116,7 @@ const projectosData = [
                 large: "images/projectos-images/webp/hoteles-proyectos-500px.webp"
             }
         },
-        "description": "Proyectos para la industria hotelera, desde pequeños hoteles boutique hasta grandes complejos..."
+        "description": "Proyectos para la industria hotelera, desde pequeños hoteles boutique hasta grandes complejos."
     },
     {
         "id": 8,
