@@ -61,7 +61,7 @@ function Carrusel ({ images }){
                             <p className="card-text">{image.text}</p>
                         </article>
                         <section className="button-lists">
-                            <Link to="/project" className="carousel-btn">Ver Proyecto</Link>
+                            {/* <Link to="/project" className="carousel-btn">Ver Proyecto</Link> */}
                             <Link to="/contacto" className="carousel-btn">Contáctenos</Link>
                         </section>
                     </div>

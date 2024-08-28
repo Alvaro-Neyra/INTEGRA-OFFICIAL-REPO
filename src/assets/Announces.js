@@ -1,8 +1,8 @@
 
 const Announces = [
     {
-        title: "La perfección siempre está en construcción",
-        text: " Integramos tecnología y construcción obtener el máximo valor en nuestros proyectos",
+        title: "Proyectos de gran valor",
+        text: "Transformamos tus necesidades en proyectos que generen valor a lo largo del tiempo",
         img: {
             jpg: {
                 xxlarge: "images/carousel-images/jpg/banner-1-1600px.jpg",
@@ -15,8 +15,8 @@ const Announces = [
         }
     },
     {
-        title: "Proyectos de alto impacto",
-        text: "Construimos proyectos de alto impacto en el mercado inmobiliario",
+        title: "Lleva tus ideas al siguiente nivel",
+        text: "Impulsa tu éxito con nuestros servicios en construcción, expedientes técnicos, gerencia de proyectos e inmobiliaria.",
         img: {
             jpg: {
                 xxlarge: "images/carousel-images/jpg/banner-2-1600px.jpg",

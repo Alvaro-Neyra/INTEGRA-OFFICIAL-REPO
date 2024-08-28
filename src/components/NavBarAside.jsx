@@ -48,8 +48,6 @@ function NavBarAside () {
                     <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia De Proyectos</NavAsideLink>
                     <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</NavAsideLink>
                     <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente Técnico</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica">Inspección Técnica</NavAsideLink>
-                    <NavAsideLink fontSize="1.5vw" fontSizeActive="1.5vw" borderColor="#26266F" colorActive="#26266F" backgroundActive={"hsl(0, 0%, 90%)"} backgroundColor={"hsl(0, 0%, 100%)"} colorText={"#26266F"} active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra">Supervisión de Obra</NavAsideLink>
                 </ul>
             </nav>
         </StyledAside>

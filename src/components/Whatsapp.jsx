@@ -2,7 +2,7 @@ import React from 'react';
 
 function Whatsapp() {
   return (
-    <a className="whatsapp-icon" href="https://wa.me/1234567890" target='_blank'>
+    <a className="whatsapp-icon" href="https://wa.me/51940982514" target='_blank'>
       <svg fill="#000000" height="100px" width="100px" viewBox="0 0 308 308" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve">
         <g>
           <path d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156

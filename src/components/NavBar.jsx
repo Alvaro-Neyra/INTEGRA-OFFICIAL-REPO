@@ -81,8 +81,6 @@ function NavBar({ active, position }) {
                                     <ButtonLink width={"100%"} active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos" onClick={showNavbar} className='navbar-link'>Gerencia de proyectos</ButtonLink>
                                     <ButtonLink width={"100%"} active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria" onClick={showNavbar} className='navbar-link'>Inmobiliaria</ButtonLink>
                                     <ButtonLink width={"100%"} active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico" onClick={showNavbar} className='navbar-link'>Expediente Técnico</ButtonLink>
-                                    <ButtonLink width={"100%"} active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica" onClick={showNavbar} className='navbar-link'>Inspección Técnica</ButtonLink>
-                                    <ButtonLink width={"100%"} active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra" onClick={showNavbar} className='navbar-link'>Supervisión de Obra</ButtonLink>
                                 </div>
                             </li>
                             <li>

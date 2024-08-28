@@ -86,23 +86,6 @@ const projectosData = [
     },
     {
         "id": 6,
-        "name": "Hospitales",
-        "img": {
-            jpg: {
-                small: "images/projectos-images/jpg/hospitales-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/hospitales-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/hospitales-proyectos-500px.jpg"
-            },
-            webp: {
-                small: "images/projectos-images/webp/hospitales-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/hospitales-proyectos-480px.webp",
-                large: "images/projectos-images/webp/hospitales-proyectos-500px.webp"
-            }
-        },
-        "description": "Proyectos especializados en el diseño y construcción de hospitales y centros de salud."
-    },
-    {
-        "id": 7,
         "name": "Hoteles",
         "img": {
             jpg: {
@@ -134,40 +117,6 @@ const projectosData = [
             },
         },
         "description": "Proyectos para instituciones educativas, incluyendo escuelas, colegios y universidades."
-    },
-    {
-        "id": 9,
-        "name": "Centros deportivos",
-        "img": {
-            jpg: {
-                small: "images/projectos-images/jpg/centros-deportivos-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/centros-deportivos-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/centros-deportivos-proyectos-500px.jpg"
-            },
-            webp: {
-                small: "images/projectos-images/webp/centros-deportivos-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/centros-deportivos-proyectos-480px.webp",
-                large: "images/projectos-images/webp/centros-deportivos-proyectos-500px.webp"
-            }
-        },
-        "description": "Proyectos para la construcción y renovación de instalaciones deportivas."
-    },
-    {
-        "id": 10,
-        "name": "Parques y Recreación",
-        "img": {
-            jpg: {
-                small: "images/projectos-images/jpg/parques-recreacion-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/parques-recreacion-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/parques-recreacion-proyectos-500px.jpg"
-            },
-            webp: {
-                small: "images/projectos-images/webp/parques-recreacion-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/parques-recreacion-proyectos-480px.webp",
-                large: "images/projectos-images/webp/parques-recreacion-proyectos-500px.webp"
-            }
-        },
-        "description": "Proyectos para el desarrollo de parques y espacios recreativos."
     }
 ];
 

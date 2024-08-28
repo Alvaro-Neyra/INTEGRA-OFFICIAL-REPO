@@ -12,7 +12,7 @@ function ContactInfo() {
                         </div>
                         <article>
                             <h3>DIRECCIÓN:</h3>
-                            <p>Los Ingenieros 580 – La Molina</p>
+                            <p>Av. Caminos del Inca 3120, Santiago De Surco</p>
                         </article>
                     </li>
                     <li>
@@ -21,8 +21,8 @@ function ContactInfo() {
                         </div>
                         <article>
                             <h3>CELULAR:</h3>
-                            <a href="tel: +929589271">
-                                <p>(51) 975 975 183</p>
+                            <a href="tel: +940982514">
+                                <p>(51) 940 982 514</p>
                             </a>
                         </article>
                     </li>
@@ -33,7 +33,7 @@ function ContactInfo() {
                         <article>
                             <h3>CORREO:</h3>
                             <a href="mailto:contacto@integra.pe">
-                                <p>contacto@integra.pe</p>
+                                <p>comercial@integraconstructores.com</p>
                             </a>
                         </article>
                     </li>

@@ -85,48 +85,6 @@
                 }
             },
             "route": "/servicios/expediente-tecnico"
-        },
-        {
-            "id": 5,
-            "nombre": "INSPECCIÓN TÉCNICA",
-            "descripcion": "Nos enfocamos en que realices una inversión segura y de valor, mediante nuestra experiencia y procedimientos altamente exhaustivos realizados previo a la compra de la propiedad de tu interés.",
-            "icon": "fa-solid fa-pen-ruler",
-            "image": {
-                jpg: {
-                    small: "images/servicios-images/jpg/inspeccion-tecnica-servicios-320px.jpg",
-                    medium: "images/servicios-images/jpg/inspeccion-tecnica-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/inspeccion-tecnica-servicios-600px.jpg",
-                    original: "images/servicios-images/jpg/inspeccion-tecnica-servicios-original.jpg"
-                },
-                webp: {
-                    small: "images/servicios-images/webp/inspeccion-tecnica-servicios-320px.webp",
-                    medium: "images/servicios-images/webp/inspeccion-tecnica-servicios-480px.webp",
-                    large: "images/servicios-images/webp/inspeccion-tecnica-servicios-600px.webp",
-                    original: "images/servicios-images/webp/inspeccion-tecnica-servicios-original.webp"
-                }
-            },
-            "route": "/servicios/inspeccion-tecnica"
-        },
-        {
-            "id": 6,
-            "nombre": "SUPERVISIÓN DE OBRA",
-            "descripcion": "INTEGRA garantiza el cumplimiento de los estándares de calidad y seguridad en la construcción de tu proyecto, mediante la supervisión de obra en todas sus etapas.",
-            "icon": "fa-solid fa-search",
-            "image": {
-                jpg: {
-                    small: "images/servicios-images/jpg/supervision-de-obra-servicios-320px.jpg",
-                    medium: "images/servicios-images/jpg/supervision-de-obra-servicios-480px.jpg",
-                    large: "images/servicios-images/jpg/supervision-de-obra-servicios-600px.jpg",
-                    original: "images/servicios-images/jpg/supervision-de-obra-servicios-original.jpg"
-                },
-                webp: {
-                    small: "images/servicios-images/webp/supervision-de-obra-servicios-320px.webp",
-                    medium: "images/servicios-images/webp/supervision-de-obra-servicios-480px.webp",
-                    large: "images/servicios-images/webp/supervision-de-obra-servicios-600px.webp",
-                    original: "images/servicios-images/webp/supervision-de-obra-servicios-original.webp"
-                }
-            },
-            "route": "/servicios/supervision-de-obra"
         }
     ]
 

@@ -39,8 +39,6 @@ function Footer() {
                                 <li><ButtonLink active={pathname === '/servicios/gerencia-de-proyectos'} to="/servicios/gerencia-de-proyectos">Gerencia de Proyectos</ButtonLink></li>
                                 <li><ButtonLink active={pathname === '/servicios/inmobiliaria'} to="/servicios/inmobiliaria">Inmobiliaria</ButtonLink></li>
                                 <li><ButtonLink active={pathname === '/servicios/expediente-tecnico'} to="/servicios/expediente-tecnico">Expediente técnico</ButtonLink></li>
-                                <li><ButtonLink active={pathname === '/servicios/inspeccion-tecnica'} to="/servicios/inspeccion-tecnica">Inspección técnica</ButtonLink></li>
-                                <li><ButtonLink active={pathname === '/servicios/supervision-de-obra'} to="/servicios/supervision-de-obra">Supervisión de obra</ButtonLink></li>
                             </ul>
                         </section>
                         <section className="contacts-footer">
@@ -51,21 +49,21 @@ function Footer() {
                                         <i className="fa-solid fa-location-dot"></i>
                                         <h3 className="heading-list">DIRECCIÓN:</h3>
                                     </div>
-                                    <p>Los Ingenieros 580 – La Molina</p>
+                                    <p>Av. Caminos del Inca 3120, Santiago De Surco</p>
                                 </li>
                                 <li>
                                     <div className="title-list">
                                         <i className="fa-solid fa-envelope"></i>
                                         <h3 className="heading-list">CORREO:</h3>
                                     </div>
-                                    <p>Contacto@faro51.com</p>
+                                    <p>comercial@integraconstructores.com</p>
                                 </li>
                                 <li>
                                     <div className="title-list">
                                         <i className="fa-solid fa-mobile"></i>
                                         <h3 className="heading-list">CELULAR:</h3>
                                     </div>
-                                    <p>(51) 975 975 183</p>
+                                    <p>(51) 940 982 514</p>
                                 </li>
                             </ul>
                         </section>

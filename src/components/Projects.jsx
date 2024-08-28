@@ -49,7 +49,7 @@ function CardSlider() {
                                     <div className="card-content">
                                         <h3 className="card__title">{project.name}</h3>
                                         <p className="card__body">{project.description}</p>
-                                        <Link to="" className="button">View More</Link>
+                                        <Link to="/portfolio" className="button">View More</Link>
                                     </div>
                                 </SwiperSlide>
                             );
